@@ -11,6 +11,6 @@ def handle_request():
     message = g.sms_client.messages.create(
                      body="Join Earth's mightiest heroes. Like Kevin Bacon.",
                      from_=yml_configs['twillio']['phone_number'],
-                     to='+8583465085'
+                     to='+18583465085'
                  )
     return json_response( sid = message.sid )
