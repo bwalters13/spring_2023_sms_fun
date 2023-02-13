@@ -3,11 +3,40 @@
         "hello": [
             "Hi!😊 How are you doing today?",
             "Hello!",
-            "Hey there! How are you?"
+            "Hey there! How are you?",
+            "Howdy! How may I help you on this wonderful day?"
         ],
+
+        "goodbye": [
+            "Have an amazing day!",
+            "Have a beautiful day! 😊 ",
+            "Feel free to visit us again anytime!",
+            "Goodbye. Don't be a stranger! ",
+            "It was nice chatting with you! Take care! ",
+            "I wish you the best! ",
+            "Good bye! Always stay positive! 😊"
+        ],
+
+        "thanks": [
+            "No, thank you!",
+            "Not a problem! ",
+            "Happy to help!",
+            "My Pleasure!",
+            "I am here to help!"
+        ],
+
+        //no answer
+        "": [
+            "I apologize, I didn't get your response.",
+            "Did you type something? I'm sorry, It must have not gone through",
+            "Can you resend the message? I did not receive it."
+        ],
+
+
         "party": [
             "\u2764\ufe0f"
         ],
+
         "h": [
             "DID NOT FIND"
         ],
