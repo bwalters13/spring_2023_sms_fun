@@ -2,18 +2,18 @@ import base64
 import json
 import yaml
 
-yml_configs = {}
-with open('config.yml', 'r') as yml_file:
-    yml_configs = yaml.safe_load(yml_file)
+yml_configs = {} #creates a empty dictornary 
+with open('config.yml', 'r') as yml_file: #reads in the file
+    yml_configs = yaml.safe_load(yml_file) #returns a python object
 
-NO_AWS = False
-if NO_AWS == False:
-    from botocore.exceptions import ClientError
+NO_AWS = False #created a varibale
+if NO_AWS == False: #error handling
+    from botocore.exceptions import ClientError 
     import boto3
 
-SECRET_CACHE = {}
+SECRET_CACHE = {} #empty dictornary
 
-def get_secrets():
+def get_secrets():  #function gets credentials for login
     global SECRET_CACHE
     if NO_AWS:
         return {"JWT": "KxQ(S#@>\"5=m$#58SgzD,+H+a73*pzKH,g5_"}
@@ -21,8 +21,8 @@ def get_secrets():
     if len(SECRET_CACHE) !=0:
         return SECRET_CACHE
 
-    secret_name = yml_configs['secrets']['secret_name']
-    region_name = yml_configs['secrets']['region_name']
+    secret_name = yml_configs['secrets']['secret_name'] #server name
+    region_name = yml_configs['secrets']['region_name'] #server region
 
     # Create a Secrets Manager client
     session = boto3.session.Session()
@@ -39,6 +39,7 @@ def get_secrets():
         get_secret_value_response = client.get_secret_value(
             SecretId=secret_name
         )
+        #error handling 
     except ClientError as e:
         if e.response['Error']['Code'] == 'DecryptionFailureException':
             # Secrets Manager can't decrypt the protected secret text using the provided KMS key.
