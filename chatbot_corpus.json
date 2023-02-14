@@ -6,6 +6,9 @@
             "Hey there! How are you?",
             "Howdy! How may I help you on this wonderful day?"
         ],
+        "i'm doing well how are you?": [
+            "I'm doing really great thanks! 😊"
+        ],
 
         "goodbye": [
             "Have an amazing day!",
@@ -19,6 +22,7 @@
         "i love you": [
             "i love you too you're an amazing person"
         ],
+        ""
 
         "thanks": [
             "No, thank you!",
