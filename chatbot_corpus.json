@@ -20,13 +20,13 @@
             "Good bye! Always stay positive! 😊"
         ],
         "i love you": [
-            "i love you too you're an amazing person"
+            "I love you too you're an amazing person"
         ],
         "thanks": [
             "No, thank you!",
             "Not a problem! ",
             "Happy to help!",
-            "My Pleasure!",
+            "My pleasure!",
             "I am here to help!"
         ],
         "": [
@@ -34,10 +34,12 @@
             "Did you type something? I'm sorry, It must have not gone through",
             "Can you resend the message? I did not receive it."
         ],
-
-
-        "party": [
-            "\u2764\ufe0f"
+        "how are you?": [
+            "I am doing fantastic, thank you for asking!😊",
+            "Amazing, and I hope you are too!",
+            "If I had a tail, I would wag it!",
+            "11/10!",
+            "Fantastic!"
         ],
 
         "h": [
