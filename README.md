@@ -1,7 +1,6 @@
-# spring_2023_sms_fun## config.yaml
+# spring_2023_sms_fun
 
 ## config.yml
-
 Provides
 1. Secret
         * secret name
@@ -13,8 +12,8 @@ Provides
 4. Twilio
         * Phone Number
 
-## Trainingdata
-### handle.py
+# Trainingdata
+## handle.py
 reads dataset text input from humans and output from bot
 ### Function sentiment_scores
 Does sentiment analysis and then store all positive strings over 50 percent into a list 
