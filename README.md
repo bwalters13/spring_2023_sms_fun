@@ -13,3 +13,8 @@ Provides
 4. Twilio
         * Phone Number
 
+## Trainingdata
+### handle.py
+reads dataset text input from humans and output from bot
+### Function sentiment_scores
+Does sentiment analysis and then store all positive strings over 50 percent into a list 
