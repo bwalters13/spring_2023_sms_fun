@@ -1,21 +1,16 @@
 import yaml
-from flask import request, g
-from flask_json import FlaskJSON, JsonError, json_response, as_json
+from flask import request, g, make_response
 from os.path import exists
-
+from tools.config import yml_configs
 
 from tools.logging import logger
-from things.actors import actor
-
+from classes.actor import actor
 
 import random
 import json
 import pickle
 
-yml_configs = {}
 BODY_MSGS = []
-with open('config.yml', 'r') as yml_file:
-    yml_configs = yaml.safe_load(yml_file)
 
 CORPUS = {}
 
@@ -54,10 +49,7 @@ def handle_request():
 
     message = g.sms_client.messages.create(
                      body=response,
-                     from_=yml_configs['twillio']['phone_number'],
+                     from_=yml_configs['twilio']['phone_number'],
                      to=request.form['From'])
-    return json_response( status = "ok" )
 
-
-
-
+    return make_response("OK", 200)

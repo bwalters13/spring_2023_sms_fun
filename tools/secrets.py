@@ -1,23 +1,13 @@
 import base64
 import json
-import yaml
-
-yml_configs = {}
-with open('config.yml', 'r') as yml_file:
-    yml_configs = yaml.safe_load(yml_file)
-
-NO_AWS = False
-if NO_AWS == False:
-    from botocore.exceptions import ClientError
-    import boto3
+import boto3
+from botocore.exceptions import ClientError
+from tools.config import yml_configs
 
 SECRET_CACHE = {}
 
 def get_secrets():
     global SECRET_CACHE
-    if NO_AWS:
-        return {"JWT": "KxQ(S#@>\"5=m$#58SgzD,+H+a73*pzKH,g5_"}
-
     if len(SECRET_CACHE) !=0:
         return SECRET_CACHE
 
