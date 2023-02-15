@@ -52,4 +52,4 @@ def handle_request():
                      from_=yml_configs['twilio']['phone_number'],
                      to=request.form['From'])
 
-    return make_response("OK", 200)
+    return "OK", 200
