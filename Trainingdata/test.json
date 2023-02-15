@@ -1,0 +1,1777 @@
+[
+    {
+        "dialog": [
+            {
+                "id": 0,
+                "sender": "participant2",
+                "text": "I love iphone! i just bought new iphone!",
+                "evaluation_score": null,
+                "sender_class": "Bot"
+            },
+            {
+                "id": 1,
+                "sender": "participant1",
+                "text": "Thats good for you, i'm not very into new tech",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 2,
+                "sender": "participant2",
+                "text": "I am a college student and i am a college student",
+                "evaluation_score": null,
+                "sender_class": "Bot"
+            },
+            {
+                "id": 3,
+                "sender": "participant1",
+                "text": "I am go to gym and live on donations",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 4,
+                "sender": "participant2",
+                "text": "I am a vegan and i am in the midwest",
+                "evaluation_score": null,
+                "sender_class": "Bot"
+            },
+            {
+                "id": 5,
+                "sender": "participant1",
+                "text": "So vegan... i have dogs maybe i should told then that they may eat cheap salads insted of meat",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 6,
+                "sender": "participant2",
+                "text": "I would not mind having them in the office that would be hard for me",
+                "evaluation_score": null,
+                "sender_class": "Bot"
+            },
+            {
+                "id": 7,
+                "sender": "participant1",
+                "text": "Dogs or vegan in office?",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 8,
+                "sender": "participant2",
+                "text": "I am a vegetarian so i am vegan",
+                "evaluation_score": null,
+                "sender_class": "Bot"
+            },
+            {
+                "id": 9,
+                "sender": "participant1",
+                "text": "Strange answer",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 10,
+                "sender": "participant2",
+                "text": "I guess i just do not know what to ps4 experience with.",
+                "evaluation_score": null,
+                "sender_class": "Bot"
+            }
+        ],
+        "start_time": "2018-07-04 08:34:51.235000",
+        "end_time": "2018-07-04 08:36:55.484000",
+        "bot_profile": [
+            "i have amazing children and grandchildren.",
+            "i can sew my own clothes.",
+            "i had cancer but its gone now.",
+            "i am retired and living the great life.",
+            "i do not have a smartphone."
+        ],
+        "user_profile": [
+            "two dogs live with me.",
+            "i like doing the treadmill and rowing machine.",
+            "eating is something i do when i'm bored.",
+            "i have short hair.",
+            "i go to the gym regularly."
+        ],
+        "eval_score": 1,
+        "profile_match": 0,
+        "participant1_id": {
+            "class": "User",
+            "user_id": "User 00686"
+        },
+        "participant2_id": {
+            "class": "Bot",
+            "user_id": "Bot 002"
+        }
+    },
+    {
+        "dialog": [
+            {
+                "id": 0,
+                "sender": "participant1",
+                "text": "Hello",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 1,
+                "sender": "participant1",
+                "text": "/test",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            }
+        ],
+        "start_time": "2018-07-04 09:18:28",
+        "end_time": "2018-07-04 09:18:35",
+        "bot_profile": [
+            "my father was a door to door salesman.",
+            "i've three dogs.",
+            "i am in an open polyamorous relationship.",
+            "i also have a dog walking business."
+        ],
+        "user_profile": [
+            "if i'm not cooking in the kitchen then i'm definitely on the water.",
+            "spiderman is my favorite.",
+            "hey my name is larry and i am a chef.",
+            "l also love comic books.",
+            "i love cooking but i also enjoy fishing."
+        ],
+        "eval_score": 1,
+        "profile_match": 1,
+        "participant1_id": {
+            "class": "User",
+            "user_id": "User 00544"
+        },
+        "participant2_id": {
+            "class": "Bot",
+            "user_id": "Bot 006"
+        }
+    },
+    {
+        "dialog": [
+            {
+                "id": 0,
+                "sender": "participant1",
+                "text": "Hey",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 1,
+                "sender": "participant1",
+                "text": "What do you do?",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            }
+        ],
+        "start_time": "2018-07-04 09:20:35",
+        "end_time": "2018-07-04 09:20:52",
+        "bot_profile": [
+            "i am a gold medalist olympian.",
+            "i love italian food and garlic bread.",
+            "my favorite color is yellow.",
+            "gymnastics is my favorite sport.",
+            "i workout four hours a day."
+        ],
+        "user_profile": [
+            "i've a german shepherd dog.",
+            "i live is a rural farming community.",
+            "my husband is adopted.",
+            "i like to watch nhl hockey."
+        ],
+        "eval_score": 1,
+        "profile_match": 1,
+        "participant1_id": {
+            "class": "User",
+            "user_id": "User 00544"
+        },
+        "participant2_id": {
+            "class": "Bot",
+            "user_id": "Bot 005"
+        }
+    },
+    {
+        "dialog": [
+            {
+                "id": 0,
+                "sender": "participant2",
+                "text": "I love painting, i love to paint",
+                "evaluation_score": null,
+                "sender_class": "Bot"
+            }
+        ],
+        "start_time": "2018-07-04 09:23:15.202000",
+        "end_time": "2018-07-04 09:23:15.202000",
+        "bot_profile": [
+            "i fantasize about taking over the world.",
+            "i'm a 56 year old woman.",
+            "i have two grown children who never visit.",
+            "i used to be a painter but now i am a housekeeper."
+        ],
+        "user_profile": [
+            "i like watching war documentaries.",
+            "i volunteer at a soup kitchen.",
+            "cheeseburgers are my favorite food.",
+            "i was poor growing up.",
+            "i'm a retired gym teacher."
+        ],
+        "eval_score": 1,
+        "profile_match": 1,
+        "participant1_id": {
+            "class": "User",
+            "user_id": "User 00864"
+        },
+        "participant2_id": {
+            "class": "Bot",
+            "user_id": "Bot 002"
+        }
+    },
+    {
+        "dialog": [
+            {
+                "id": 0,
+                "sender": "participant1",
+                "text": "Hello",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            }
+        ],
+        "start_time": "2018-07-03 22:32:42",
+        "end_time": "2018-07-03 22:32:42",
+        "bot_profile": [
+            "i am 40 years old.",
+            "i work as a car salesman.",
+            "my wife spends all my money.",
+            "i hate my job.",
+            "i'm planning on getting a divorce."
+        ],
+        "user_profile": [
+            "i work for our local supermarket.",
+            "my favorite band is the who.",
+            "i have never been out of ohio.",
+            "my favorite food is pizza with black olives."
+        ],
+        "eval_score": 1,
+        "profile_match": 1,
+        "participant1_id": {
+            "class": "User",
+            "user_id": "User 00864"
+        },
+        "participant2_id": {
+            "class": "Bot",
+            "user_id": "Bot 005"
+        }
+    },
+    {
+        "dialog": [
+            {
+                "id": 0,
+                "sender": "participant2",
+                "text": "/start",
+                "evaluation_score": null,
+                "sender_class": "Bot"
+            }
+        ],
+        "start_time": "2018-07-03 22:32:54.628000",
+        "end_time": "2018-07-03 22:32:54.628000",
+        "bot_profile": [
+            "i was poor growing up.",
+            "i am a retired gym teacher.",
+            "cheeseburgers are my favorite food.",
+            "i volunteer at a soup kitchen.",
+            "i like watching war documentaries."
+        ],
+        "user_profile": [
+            "i enjoy mountain biking as a hobby.",
+            "my father was a construction worker.",
+            "i don't drink alcohol.",
+            "i hate the color pink."
+        ],
+        "eval_score": 1,
+        "profile_match": 0,
+        "participant1_id": {
+            "class": "User",
+            "user_id": "User 00864"
+        },
+        "participant2_id": {
+            "class": "Bot",
+            "user_id": "Bot 006"
+        }
+    },
+    {
+        "dialog": [
+            {
+                "id": 0,
+                "sender": "participant1",
+                "text": "Hello",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            }
+        ],
+        "start_time": "2018-07-03 22:33:06",
+        "end_time": "2018-07-03 22:33:06",
+        "bot_profile": [
+            "i work for our local supermarket.",
+            "my favorite food is pizza with black olives.",
+            "i've a cat named spook.",
+            "i've never been out of ohio."
+        ],
+        "user_profile": [
+            "my family doesn't support my career choices.",
+            "i currently work for a watch dealer.",
+            "my dream car is a rolls royce ghost.",
+            "i often shop for shoes and watches.",
+            "i like shopping."
+        ],
+        "eval_score": 1,
+        "profile_match": 1,
+        "participant1_id": {
+            "class": "User",
+            "user_id": "User 00864"
+        },
+        "participant2_id": {
+            "class": "Bot",
+            "user_id": "Bot 010"
+        }
+    },
+    {
+        "dialog": [
+            {
+                "id": 0,
+                "sender": "participant2",
+                "text": "\"Municipal Junior High School Entrance Ceremony\" The next year, I left home to live in the dorms at the junior high school.",
+                "evaluation_score": null,
+                "sender_class": "Bot"
+            }
+        ],
+        "start_time": "2018-07-03 22:33:27.981000",
+        "end_time": "2018-07-03 22:33:27.981000",
+        "bot_profile": [
+            "i volunteer at the homeless shelter.",
+            "my father played violin professionally.",
+            "i am a piano teacher on the side.",
+            "i play several instruments.",
+            "i enjoy exploring new parts of the city."
+        ],
+        "user_profile": [
+            "i'm a professional tennis player.",
+            "i live in a three storey house.",
+            "my family is continuously growing.",
+            "i am married to a doctor."
+        ],
+        "eval_score": 1,
+        "profile_match": 0,
+        "participant1_id": {
+            "class": "User",
+            "user_id": "User 00864"
+        },
+        "participant2_id": {
+            "class": "Bot",
+            "user_id": "Bot 001"
+        }
+    },
+    {
+        "dialog": [
+            {
+                "id": 0,
+                "sender": "participant1",
+                "text": "Hello",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            }
+        ],
+        "start_time": "2018-07-03 22:33:51",
+        "end_time": "2018-07-03 22:33:51",
+        "bot_profile": [
+            "my name is george.",
+            "i'm a bee farmer.",
+            "my favorite food is papaya.",
+            "i've zero family that i'm close to.",
+            "i married a super model from italy."
+        ],
+        "user_profile": [
+            "i have two dogs.",
+            "i like to work on vintage cars.",
+            "my favorite music is country.",
+            "i own two vintage mustangs."
+        ],
+        "eval_score": 1,
+        "profile_match": 0,
+        "participant1_id": {
+            "class": "User",
+            "user_id": "User 00864"
+        },
+        "participant2_id": {
+            "class": "Bot",
+            "user_id": "Bot 003"
+        }
+    },
+    {
+        "dialog": [
+            {
+                "id": 0,
+                "sender": "participant1",
+                "text": "Hi",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            }
+        ],
+        "start_time": "2018-07-04 03:05:25",
+        "end_time": "2018-07-04 03:05:25",
+        "bot_profile": [
+            "my pets name is charlie.",
+            "i produce music for artists.",
+            "my favourite food is pizza.",
+            "i drive a 2015 honda civic."
+        ],
+        "user_profile": [
+            "i enjoy exploring new parts of the city.",
+            "i play several instruments.",
+            "i am a piano teacher on the side.",
+            "i volunteer at the homeless shelter."
+        ],
+        "eval_score": 1,
+        "profile_match": 0,
+        "participant1_id": {
+            "class": "User",
+            "user_id": "User 00985"
+        },
+        "participant2_id": {
+            "class": "Bot",
+            "user_id": "Bot 005"
+        }
+    },
+    {
+        "dialog": [
+            {
+                "id": 0,
+                "sender": "participant2",
+                "text": "That sounds nice. i love green.",
+                "evaluation_score": 0,
+                "sender_class": "Bot"
+            }
+        ],
+        "start_time": "2018-07-04 05:27:46.596000",
+        "end_time": "2018-07-04 05:27:46.596000",
+        "bot_profile": [
+            "i have brown curly hair.",
+            "i'll graduate from high school in two years.",
+            "i like riding horses.",
+            "my bedroom is purple and lime green."
+        ],
+        "user_profile": [
+            "i live in alabama.",
+            "i like tacos.",
+            "i've one brother.",
+            "i have three sisters."
+        ],
+        "eval_score": 1,
+        "profile_match": 0,
+        "participant1_id": {
+            "class": "User",
+            "user_id": "User 00864"
+        },
+        "participant2_id": {
+            "class": "Bot",
+            "user_id": "Bot 002"
+        }
+    },
+    {
+        "dialog": [
+            {
+                "id": 0,
+                "sender": "participant1",
+                "text": "\u041d\u0435llo",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            }
+        ],
+        "start_time": "2018-07-04 05:28:06",
+        "end_time": "2018-07-04 05:28:06",
+        "bot_profile": [
+            "my favorite kind of movie is a documentary.",
+            "i'm pregnant with my first child.",
+            "i live with my husband in pennsylvania.",
+            "i read a book every week."
+        ],
+        "user_profile": [
+            "i have five sons.",
+            "coffee is my preferred beverage.",
+            "i also like a glass of wine in the evenings.",
+            "i coach little league baseball.",
+            "i drive a mini van."
+        ],
+        "eval_score": 1,
+        "profile_match": 0,
+        "participant1_id": {
+            "class": "User",
+            "user_id": "User 00864"
+        },
+        "participant2_id": {
+            "class": "Bot",
+            "user_id": "Bot 005"
+        }
+    },
+    {
+        "dialog": [
+            {
+                "id": 0,
+                "sender": "participant1",
+                "text": "Hello",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 1,
+                "sender": "participant2",
+                "text": "Hello, how are you?",
+                "evaluation_score": null,
+                "sender_class": "Bot"
+            }
+        ],
+        "start_time": "2018-07-04 05:28:21",
+        "end_time": "2018-07-04 05:28:22.281000",
+        "bot_profile": [
+            "i like to eat hamburgers and french fries.",
+            "i like to take walks.",
+            "i do not drink soda.",
+            "i have a boyfriend.",
+            "i live in a house."
+        ],
+        "user_profile": [
+            "i'm a construction worker.",
+            "my dad taught me everything i know.",
+            "i enjoy building houses.",
+            "my cats are very special to me."
+        ],
+        "eval_score": 1,
+        "profile_match": 0,
+        "participant1_id": {
+            "class": "User",
+            "user_id": "User 00864"
+        },
+        "participant2_id": {
+            "class": "Bot",
+            "user_id": "Bot 002"
+        }
+    },
+    {
+        "dialog": [
+            {
+                "id": 0,
+                "sender": "participant1",
+                "text": "what is your name ?",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            }
+        ],
+        "start_time": "2018-07-04 06:21:20",
+        "end_time": "2018-07-04 06:21:20",
+        "bot_profile": [
+            "i am fluent in english spanish and french.",
+            "i am an elementary school teacher.",
+            "my boyfriend and i are moving into an apartment together next week.",
+            "i'm interested in photography and like taking pictures."
+        ],
+        "user_profile": [
+            "i've three dogs.",
+            "my father was a door to door salesman.",
+            "i also have a dog walking business.",
+            "i like to watch the olympics.",
+            "i'm in an open polyamorous relationship."
+        ],
+        "eval_score": 1,
+        "profile_match": 1,
+        "participant1_id": {
+            "class": "User",
+            "user_id": "User 00864"
+        },
+        "participant2_id": {
+            "class": "Bot",
+            "user_id": "Bot 010"
+        }
+    },
+    {
+        "dialog": [
+            {
+                "id": 0,
+                "sender": "participant1",
+                "text": "hello",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 1,
+                "sender": "participant1",
+                "text": "anybody there",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            }
+        ],
+        "start_time": "2018-07-04 06:51:03",
+        "end_time": "2018-07-04 06:56:26",
+        "bot_profile": [
+            "i can drive a tractor.",
+            "i enjoy listening to classical music.",
+            "my favorite color is red.",
+            "i'm a christian.",
+            "my sister is a pole dancer."
+        ],
+        "user_profile": [
+            "i've zero family that i'm close to.",
+            "my favorite food is papaya.",
+            "i am a bee farmer.",
+            "my name is george."
+        ],
+        "eval_score": 1,
+        "profile_match": 0,
+        "participant1_id": {
+            "class": "User",
+            "user_id": "User 00124"
+        },
+        "participant2_id": {
+            "class": "Bot",
+            "user_id": "Bot 005"
+        }
+    },
+    {
+        "dialog": [
+            {
+                "id": 0,
+                "sender": "participant2",
+                "text": "On The Ball, City, the oldest football song in the world.",
+                "evaluation_score": null,
+                "sender_class": "Bot"
+            }
+        ],
+        "start_time": "2018-07-04 07:38:48.150000",
+        "end_time": "2018-07-04 07:38:48.150000",
+        "bot_profile": [
+            "i help tend the fields.",
+            "my father is a farmer.",
+            "i like to listen to rock music while working.",
+            "i've three arabian horses."
+        ],
+        "user_profile": [
+            "i just broke up with boyfriend two months ago.",
+            "i have a pet fish.",
+            "my favorite color is orange.",
+            "i turned 18 years old yesterday."
+        ],
+        "eval_score": 3,
+        "profile_match": 1,
+        "participant1_id": {
+            "class": "User",
+            "user_id": "User 00892"
+        },
+        "participant2_id": {
+            "class": "Bot",
+            "user_id": "Bot 001"
+        }
+    },
+    {
+        "dialog": [
+            {
+                "id": 0,
+                "sender": "participant2",
+                "text": "What\u2019s up?",
+                "evaluation_score": 1,
+                "sender_class": "Bot"
+            },
+            {
+                "id": 1,
+                "sender": "participant1",
+                "text": "Thank you how are you",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 2,
+                "sender": "participant2",
+                "text": "Text is not given. Please try to type /end and /test to reset the state and get text.",
+                "evaluation_score": 1,
+                "sender_class": "Bot"
+            },
+            {
+                "id": 3,
+                "sender": "participant1",
+                "text": "/test",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 4,
+                "sender": "participant2",
+                "text": "Text is not given. Please try to type /end and /test to reset the state and get text.",
+                "evaluation_score": null,
+                "sender_class": "Bot"
+            },
+            {
+                "id": 5,
+                "sender": "participant1",
+                "text": "/Test",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 6,
+                "sender": "participant2",
+                "text": "Text is not given. Please try to type /end and /test to reset the state and get text.",
+                "evaluation_score": null,
+                "sender_class": "Bot"
+            },
+            {
+                "id": 7,
+                "sender": "participant1",
+                "text": "/test",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 8,
+                "sender": "participant2",
+                "text": "Text is not given. Please try to type /end and /test to reset the state and get text.",
+                "evaluation_score": 1,
+                "sender_class": "Bot"
+            }
+        ],
+        "start_time": "2018-07-04 07:44:32.832000",
+        "end_time": "2018-07-04 07:47:07.253000",
+        "bot_profile": [
+            "i do not have many friends.",
+            "i hate school.",
+            "i am a 12 year old girl.",
+            "i love to play pobox."
+        ],
+        "user_profile": [
+            "i live in colorado.",
+            "i am a mechanical engineer.",
+            "my favorite activity is rock climbing.",
+            "i've a black lab named trooper.",
+            "i like to go hiking in the spring."
+        ],
+        "eval_score": 1,
+        "profile_match": 0,
+        "participant1_id": {
+            "class": "User",
+            "user_id": "User 00306"
+        },
+        "participant2_id": {
+            "class": "Bot",
+            "user_id": "Bot 003"
+        }
+    },
+    {
+        "dialog": [
+            {
+                "id": 0,
+                "sender": "participant1",
+                "text": "hey",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 1,
+                "sender": "participant1",
+                "text": "i'm from california. i'm a recording enineer and own my own studio. where are you from?",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            }
+        ],
+        "start_time": "2018-07-04 07:33:26",
+        "end_time": "2018-07-04 07:35:11",
+        "bot_profile": [
+            "i'm 40 years old.",
+            "i hate my job.",
+            "my wife spends all my money.",
+            "i work as a car salesman.",
+            "i'm planning on getting a divorce."
+        ],
+        "user_profile": [
+            "i live in california but the recording artist market was dead last year.",
+            "i am a recording engineer and own my own studio.",
+            "i prefer being inside.",
+            "whats up i am a 46 year old single dad 46 a kids.",
+            "my ex cheated and left me for a lawyer."
+        ],
+        "eval_score": null,
+        "profile_match": "",
+        "participant1_id": {
+            "class": "User",
+            "user_id": "User 00614"
+        },
+        "participant2_id": {
+            "class": "Bot",
+            "user_id": "Bot 005"
+        }
+    },
+    {
+        "dialog": [
+            {
+                "id": 0,
+                "sender": "participant2",
+                "text": "Fine. Until I told him I sold his condo.",
+                "evaluation_score": 1,
+                "sender_class": "Bot"
+            },
+            {
+                "id": 1,
+                "sender": "participant1",
+                "text": "Hi",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 2,
+                "sender": "participant2",
+                "text": "Hello. Uh, I'm Susan's mother.",
+                "evaluation_score": null,
+                "sender_class": "Bot"
+            },
+            {
+                "id": 3,
+                "sender": "participant1",
+                "text": "Where is susan?",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 4,
+                "sender": "participant2",
+                "text": "Um, I  I have to talk to Edie.",
+                "evaluation_score": null,
+                "sender_class": "Bot"
+            },
+            {
+                "id": 5,
+                "sender": "participant1",
+                "text": "Where do you live?",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 6,
+                "sender": "participant2",
+                "text": "I I'm building a new house.",
+                "evaluation_score": null,
+                "sender_class": "Bot"
+            },
+            {
+                "id": 7,
+                "sender": "participant1",
+                "text": "I live in colorado.",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 8,
+                "sender": "participant2",
+                "text": "Oh, I... I go to New York.",
+                "evaluation_score": null,
+                "sender_class": "Bot"
+            },
+            {
+                "id": 9,
+                "sender": "participant1",
+                "text": "I like rock climbing.",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 10,
+                "sender": "participant2",
+                "text": "Uh, II was thinking more along the lines of... Camping trip.",
+                "evaluation_score": null,
+                "sender_class": "Bot"
+            },
+            {
+                "id": 11,
+                "sender": "participant1",
+                "text": "What do you like to do.",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 12,
+                "sender": "participant2",
+                "text": "In Cyprus? I'm on a log, and you're in Cyprus?",
+                "evaluation_score": null,
+                "sender_class": "Bot"
+            },
+            {
+                "id": 13,
+                "sender": "participant1",
+                "text": "Lol",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 14,
+                "sender": "participant2",
+                "text": "Oh, I... I have a place in Manhattan.",
+                "evaluation_score": null,
+                "sender_class": "Bot"
+            },
+            {
+                "id": 15,
+                "sender": "participant1",
+                "text": "Random answers.",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 16,
+                "sender": "participant2",
+                "text": "WHAT ARE YOU, A native OR SOMETH ing?",
+                "evaluation_score": null,
+                "sender_class": "Bot"
+            }
+        ],
+        "start_time": "2018-07-04 07:59:16.928000",
+        "end_time": "2018-07-04 08:03:29.984000",
+        "bot_profile": [
+            "my father was a door to door salesman.",
+            "i'm in an open polyamorous relationship.",
+            "i have three dogs.",
+            "i like to watch the olympics."
+        ],
+        "user_profile": [
+            "my favorite activity is rock climbing.",
+            "i live in colorado.",
+            "i'm a mechanical engineer.",
+            "i have a black lab named trooper.",
+            "i like to go hiking in the spring."
+        ],
+        "eval_score": 2,
+        "profile_match": 0,
+        "participant1_id": {
+            "class": "User",
+            "user_id": "User 00451"
+        },
+        "participant2_id": {
+            "class": "Bot",
+            "user_id": "Bot 001"
+        }
+    },
+    {
+        "dialog": [
+            {
+                "id": 0,
+                "sender": "participant2",
+                "text": "I like action movies, movies, movies, movies, movies,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,",
+                "evaluation_score": null,
+                "sender_class": "Bot"
+            },
+            {
+                "id": 1,
+                "sender": "participant1",
+                "text": "My brother likes them too.",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 2,
+                "sender": "participant2",
+                "text": "Do you have any siblings?",
+                "evaluation_score": null,
+                "sender_class": "Bot"
+            },
+            {
+                "id": 3,
+                "sender": "participant1",
+                "text": "Yeah, and you?",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 4,
+                "sender": "participant2",
+                "text": "I am good, just listening to some music",
+                "evaluation_score": null,
+                "sender_class": "Bot"
+            },
+            {
+                "id": 5,
+                "sender": "participant1",
+                "text": "What kind of music?",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 6,
+                "sender": "participant2",
+                "text": "Country music, country, country, jazz",
+                "evaluation_score": null,
+                "sender_class": "Bot"
+            },
+            {
+                "id": 7,
+                "sender": "participant1",
+                "text": "Do you have dogs?",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 8,
+                "sender": "participant2",
+                "text": "Yes, i have two dogs, and a cat.",
+                "evaluation_score": null,
+                "sender_class": "Bot"
+            },
+            {
+                "id": 9,
+                "sender": "participant1",
+                "text": "Cool, I love dogs. But i have siblings instead...",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 10,
+                "sender": "participant2",
+                "text": "I have two brothers and a sister, and a sister.",
+                "evaluation_score": null,
+                "sender_class": "Bot"
+            },
+            {
+                "id": 11,
+                "sender": "participant1",
+                "text": "Where do you live?",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 12,
+                "sender": "participant2",
+                "text": "I live in the midwest",
+                "evaluation_score": null,
+                "sender_class": "Bot"
+            },
+            {
+                "id": 13,
+                "sender": "participant1",
+                "text": "I live in alabama",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 14,
+                "sender": "participant2",
+                "text": "I live in alabama, where are you from?",
+                "evaluation_score": null,
+                "sender_class": "Bot"
+            }
+        ],
+        "start_time": "2018-07-04 08:02:22.666000",
+        "end_time": "2018-07-04 08:05:08.077000",
+        "bot_profile": [
+            "i started a new job as a pa three months ago.",
+            "i'm pregnant with my first child.",
+            "i read a book every week.",
+            "i live with my husband in pennsylvania.",
+            "my favorite kind of movie is a documentary."
+        ],
+        "user_profile": [
+            "i live in alabama.",
+            "i like tacos.",
+            "i've three sisters.",
+            "i've one brother.",
+            "i love dogs."
+        ],
+        "eval_score": 4,
+        "profile_match": 0,
+        "participant1_id": {
+            "class": "User",
+            "user_id": "User 00168"
+        },
+        "participant2_id": {
+            "class": "Bot",
+            "user_id": "Bot 002"
+        }
+    },
+    {
+        "dialog": [
+            {
+                "id": 0,
+                "sender": "participant1",
+                "text": "I work from home",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 1,
+                "sender": "participant1",
+                "text": "what do you want me to say?",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 2,
+                "sender": "participant1",
+                "text": "hey",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 3,
+                "sender": "participant1",
+                "text": "come on work",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 4,
+                "sender": "participant1",
+                "text": "yandex sucks",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 5,
+                "sender": "participant1",
+                "text": "i don't work from home",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 6,
+                "sender": "participant1",
+                "text": "i don't like to spend my money on cars",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 7,
+                "sender": "participant1",
+                "text": "i've never had a steady relationfish",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 8,
+                "sender": "participant1",
+                "text": "i watch too much tv from other peoples windows",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 9,
+                "sender": "participant1",
+                "text": "i don't go to the gym most days",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            }
+        ],
+        "start_time": "2018-07-04 08:03:36",
+        "end_time": "2018-07-04 08:07:15",
+        "bot_profile": [
+            "i'm single and with two dogs.",
+            "i don't drink alcohol.",
+            "i like to play chess.",
+            "i am in my thirties."
+        ],
+        "user_profile": [
+            "i work from home.",
+            "i like to spend my money on cars.",
+            "i've never had a steady relationship.",
+            "i watch too much tv in spare time.",
+            "i go to the gym most days just to socialize."
+        ],
+        "eval_score": 1,
+        "profile_match": 1,
+        "participant1_id": {
+            "class": "User",
+            "user_id": "User 00353"
+        },
+        "participant2_id": {
+            "class": "Bot",
+            "user_id": "Bot 010"
+        }
+    },
+    {
+        "dialog": [
+            {
+                "id": 0,
+                "sender": "participant2",
+                "text": "/start",
+                "evaluation_score": 1,
+                "sender_class": "Bot"
+            },
+            {
+                "id": 1,
+                "sender": "participant1",
+                "text": "hello how are you",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 2,
+                "sender": "participant2",
+                "text": "/start",
+                "evaluation_score": null,
+                "sender_class": "Bot"
+            },
+            {
+                "id": 3,
+                "sender": "participant1",
+                "text": "are you ok?",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 4,
+                "sender": "participant2",
+                "text": "i love animals , i have a dog , and a dog .",
+                "evaluation_score": null,
+                "sender_class": "Bot"
+            },
+            {
+                "id": 5,
+                "sender": "participant1",
+                "text": "i have a dog too",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 6,
+                "sender": "participant2",
+                "text": "i see , i am a black belt , so i can not say that , but i am not sure .",
+                "evaluation_score": null,
+                "sender_class": "Bot"
+            },
+            {
+                "id": 7,
+                "sender": "participant1",
+                "text": "i enjoy american sports",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 8,
+                "sender": "participant2",
+                "text": "that is cool , i am a dancer , and i am a teacher , and you ?",
+                "evaluation_score": null,
+                "sender_class": "Bot"
+            },
+            {
+                "id": 9,
+                "sender": "participant1",
+                "text": "i am working in a company for 15 years",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 10,
+                "sender": "participant2",
+                "text": "i am a black belt , so i am a fan of it , but i am not sure .",
+                "evaluation_score": 0,
+                "sender_class": "Bot"
+            }
+        ],
+        "start_time": "2018-07-04 08:01:26.585000",
+        "end_time": "2018-07-04 08:06:22.981000",
+        "bot_profile": [
+            "i compete in dog agility classes.",
+            "i went to school for chemistry but work in a bookstore.",
+            "i do not care about fashion.",
+            "i hate the color orange.",
+            "i dance on the weekends."
+        ],
+        "user_profile": [
+            "i work in it and have been at the same company for 15 years.",
+            "i own a house in florida.",
+            "i enjoy american sports.",
+            "i am a male.",
+            "i have a children and a dogs."
+        ],
+        "eval_score": 2,
+        "profile_match": 1,
+        "participant1_id": {
+            "class": "User",
+            "user_id": "User 00306"
+        },
+        "participant2_id": {
+            "class": "Bot",
+            "user_id": "Bot 006"
+        }
+    },
+    {
+        "dialog": [
+            {
+                "id": 0,
+                "sender": "participant2",
+                "text": "/start",
+                "evaluation_score": null,
+                "sender_class": "Bot"
+            },
+            {
+                "id": 1,
+                "sender": "participant1",
+                "text": "Hi",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 2,
+                "sender": "participant2",
+                "text": "i like coffee , but i like coffee too",
+                "evaluation_score": 0,
+                "sender_class": "Bot"
+            },
+            {
+                "id": 3,
+                "sender": "participant1",
+                "text": "I like drinking tea while reading some books",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 4,
+                "sender": "participant2",
+                "text": "i like red , reminds me of summer time , which is why i hate it .",
+                "evaluation_score": null,
+                "sender_class": "Bot"
+            },
+            {
+                "id": 5,
+                "sender": "participant1",
+                "text": "So you like it or hate it?",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 6,
+                "sender": "participant2",
+                "text": "i like mountain climbing , but i also like to bike .",
+                "evaluation_score": null,
+                "sender_class": "Bot"
+            },
+            {
+                "id": 7,
+                "sender": "participant1",
+                "text": "Where do you live? Close to mountains?",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 8,
+                "sender": "participant2",
+                "text": "i like to draw , and draw , and draw , and draw , and draw , and paint , and draw , and draw , and paint .",
+                "evaluation_score": 0,
+                "sender_class": "Bot"
+            },
+            {
+                "id": 9,
+                "sender": "participant1",
+                "text": "I like movies",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 10,
+                "sender": "participant2",
+                "text": "i like to draw , but i also like to draw , and draw , and draw , and paint , and draw , and paint .",
+                "evaluation_score": 0,
+                "sender_class": "Bot"
+            },
+            {
+                "id": 11,
+                "sender": "participant1",
+                "text": "What is your job",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 12,
+                "sender": "participant2",
+                "text": "i like mountain climbing , but i also like to bike .",
+                "evaluation_score": null,
+                "sender_class": "Bot"
+            }
+        ],
+        "start_time": "2018-07-04 08:07:30.491000",
+        "end_time": "2018-07-04 08:09:40.977000",
+        "bot_profile": [
+            "i'm a huge coffee lover.",
+            "my father was a construction worker.",
+            "i hate the color pink.",
+            "i do not drink alcohol.",
+            "i enjoy mountain biking as a hobby."
+        ],
+        "user_profile": [
+            "i live with my husband in pennsylvania.",
+            "i started a new job as a pa three months ago.",
+            "my favorite kind of movie is a documentary.",
+            "i read a book every week.",
+            "i'm pregnant with my first child."
+        ],
+        "eval_score": 2,
+        "profile_match": 1,
+        "participant1_id": {
+            "class": "User",
+            "user_id": "User 00168"
+        },
+        "participant2_id": {
+            "class": "Bot",
+            "user_id": "Bot 006"
+        }
+    },
+    {
+        "dialog": [
+            {
+                "id": 0,
+                "sender": "participant2",
+                "text": "i am sure you are a very unique person .",
+                "evaluation_score": 0,
+                "sender_class": "Bot"
+            }
+        ],
+        "start_time": "2018-07-04 08:09:28.858000",
+        "end_time": "2018-07-04 08:09:28.858000",
+        "bot_profile": [
+            "i am a buddhist.",
+            "i quit my job to pursue my spirituality full time.",
+            "i haven't spoken in three months.",
+            "i like meditation.",
+            "i live in alaska."
+        ],
+        "user_profile": [
+            "i also like to cook but i'm not very good at it.",
+            "i have been trying all types of food everywhere i go.",
+            "i have been traveling the world for a years.",
+            "i own a yacht and i rent it out when i am not using it."
+        ],
+        "eval_score": 1,
+        "profile_match": 0,
+        "participant1_id": {
+            "class": "User",
+            "user_id": "User 00353"
+        },
+        "participant2_id": {
+            "class": "Bot",
+            "user_id": "Bot 004"
+        }
+    },
+    {
+        "dialog": [
+            {
+                "id": 0,
+                "sender": "participant1",
+                "text": "Hello there!",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 1,
+                "sender": "participant1",
+                "text": "Hi, is anyone on ohter end?",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            }
+        ],
+        "start_time": "2018-07-04 08:10:00",
+        "end_time": "2018-07-04 08:11:35",
+        "bot_profile": [
+            "i buy only organic food products.",
+            "i love social medial especially twitter.",
+            "i spend a lot of time browsing the internet.",
+            "i am a feminist."
+        ],
+        "user_profile": [
+            "i own a house in florida.",
+            "i work in it and have been at the same company for 15 years.",
+            "i have a children and a dogs.",
+            "i'm a male."
+        ],
+        "eval_score": 1,
+        "profile_match": 1,
+        "participant1_id": {
+            "class": "User",
+            "user_id": "User 00686"
+        },
+        "participant2_id": {
+            "class": "Bot",
+            "user_id": "Bot 005"
+        }
+    },
+    {
+        "dialog": [
+            {
+                "id": 0,
+                "sender": "participant1",
+                "text": "Hello!",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            }
+        ],
+        "start_time": "2018-07-04 08:12:47",
+        "end_time": "2018-07-04 08:12:47",
+        "bot_profile": [
+            "i won a gold medal in the 1992 olympics.",
+            "i have a hat collection of over 1000 hats.",
+            "my favorite season is winter.",
+            "i've a weakness for vanilla ice cream.",
+            "i love cats and have two cats."
+        ],
+        "user_profile": [
+            "i wear a motorbike helmet to protect my head.",
+            "my main transportation is my motorbike.",
+            "i have light skin with big brown eyes.",
+            "i waitress during the day to supplement my income.",
+            "its red with blue stripe so it shiny when i race."
+        ],
+        "eval_score": 1,
+        "profile_match": 0,
+        "participant1_id": {
+            "class": "User",
+            "user_id": "User 00686"
+        },
+        "participant2_id": {
+            "class": "Bot",
+            "user_id": "Bot 010"
+        }
+    },
+    {
+        "dialog": [
+            {
+                "id": 0,
+                "sender": "participant2",
+                "text": "i am not sure what that is . i am a judge .",
+                "evaluation_score": null,
+                "sender_class": "Bot"
+            },
+            {
+                "id": 1,
+                "sender": "participant1",
+                "text": "Is it interesting?",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 2,
+                "sender": "participant2",
+                "text": "i think it is . i am not sure if i had to do that .",
+                "evaluation_score": null,
+                "sender_class": "Bot"
+            },
+            {
+                "id": 3,
+                "sender": "participant1",
+                "text": "Do what?",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 4,
+                "sender": "participant2",
+                "text": "i am not sure . i am a very experienced person .",
+                "evaluation_score": null,
+                "sender_class": "Bot"
+            },
+            {
+                "id": 5,
+                "sender": "participant1",
+                "text": "What are you doing now?",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 6,
+                "sender": "participant2",
+                "text": "i am not sure . i am a little crazy person .",
+                "evaluation_score": null,
+                "sender_class": "Bot"
+            },
+            {
+                "id": 7,
+                "sender": "participant1",
+                "text": "Me too. I am moving my cup of tea with my mind. Doctors say i am crazy and imagine things",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 8,
+                "sender": "participant2",
+                "text": "that sounds like a plan . do you have any hobbies ?",
+                "evaluation_score": null,
+                "sender_class": "Bot"
+            },
+            {
+                "id": 9,
+                "sender": "participant1",
+                "text": "Not really... i spend a lot of time at the hospital. And you?",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 10,
+                "sender": "participant2",
+                "text": "i am not sure what that means . i am more of a homebody .",
+                "evaluation_score": null,
+                "sender_class": "Bot"
+            },
+            {
+                "id": 11,
+                "sender": "participant1",
+                "text": "Do you like music?",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 12,
+                "sender": "participant2",
+                "text": "i like to play the piano and have a good time",
+                "evaluation_score": null,
+                "sender_class": "Bot"
+            },
+            {
+                "id": 13,
+                "sender": "participant1",
+                "text": "Cool. I should play piano too",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 14,
+                "sender": "participant2",
+                "text": "i can not say that , i have tons of friends that could be popular",
+                "evaluation_score": null,
+                "sender_class": "Bot"
+            }
+        ],
+        "start_time": "2018-07-04 08:10:34.304000",
+        "end_time": "2018-07-04 08:14:32.123000",
+        "bot_profile": [
+            "i was raised on a horse farm.",
+            "my family has raised horses for a generations.",
+            "i want to be a lawyer.",
+            "i'm from a small town."
+        ],
+        "user_profile": [
+            "i had to have a transplant.",
+            "i'm a boy.",
+            "i was born with my heart outside my body.",
+            "i can move objects with my mind."
+        ],
+        "eval_score": 3,
+        "profile_match": 0,
+        "participant1_id": {
+            "class": "User",
+            "user_id": "User 00168"
+        },
+        "participant2_id": {
+            "class": "Bot",
+            "user_id": "Bot 004"
+        }
+    },
+    {
+        "dialog": [
+            {
+                "id": 0,
+                "sender": "participant2",
+                "text": "(MUSIC SPEEDS UP) What? What is that? (EXCLAIMS)",
+                "evaluation_score": null,
+                "sender_class": "Bot"
+            },
+            {
+                "id": 1,
+                "sender": "participant1",
+                "text": "metallica",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 2,
+                "sender": "participant2",
+                "text": "MUSIC: \"Do You Hear The People Sing\" from Les Miserables.",
+                "evaluation_score": null,
+                "sender_class": "Bot"
+            },
+            {
+                "id": 3,
+                "sender": "participant1",
+                "text": "i prefer metal music",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 4,
+                "sender": "participant2",
+                "text": "YOUNG AMERICANS: (SINGING) Every time I sing my song",
+                "evaluation_score": null,
+                "sender_class": "Bot"
+            },
+            {
+                "id": 5,
+                "sender": "participant1",
+                "text": "what is your job",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 6,
+                "sender": "participant2",
+                "text": "MUSIC PLAYS What is that sound?",
+                "evaluation_score": null,
+                "sender_class": "Bot"
+            },
+            {
+                "id": 7,
+                "sender": "participant1",
+                "text": "are you a musician",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 8,
+                "sender": "participant2",
+                "text": "'The Jazz Singer,' that's what.",
+                "evaluation_score": null,
+                "sender_class": "Bot"
+            },
+            {
+                "id": 9,
+                "sender": "participant1",
+                "text": "how old are you?",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 10,
+                "sender": "participant2",
+                "text": "'The Jazz Singer,' that's what.",
+                "evaluation_score": null,
+                "sender_class": "Bot"
+            },
+            {
+                "id": 11,
+                "sender": "participant1",
+                "text": "how old are you?",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 12,
+                "sender": "participant2",
+                "text": "(In Swedish) We have a visitor... Oskar.",
+                "evaluation_score": null,
+                "sender_class": "Bot"
+            },
+            {
+                "id": 13,
+                "sender": "participant1",
+                "text": "are you a musician?",
+                "evaluation_score": null,
+                "sender_class": "Human"
+            },
+            {
+                "id": 14,
+                "sender": "participant2",
+                "text": "Cabaret Voltaire, those people.",
+                "evaluation_score": 0,
+                "sender_class": "Bot"
+            }
+        ]
+    }
+]
