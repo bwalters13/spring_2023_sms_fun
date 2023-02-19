@@ -67,16 +67,24 @@
             "Hello, how are you on this blessed day? 😊"
         ],
         "testing first": [
-            "DID NOT FIND"
+            "What are you testing?"
         ],
         "testing second ": [
-            "DID NOT FIND"
+            "What are you testing?"
         ],
         "\ud83d\ude2d\ud83d\ude2d\ud83d\ude2d": [
-            "DID NOT FIND"
+            "Those are some of my favorites!"
         ],
-        "your favorite": [
-            "DID NOT FIND"
+        "hello stranger ": [
+            "Hello friend how are you?"
+        ]
+        ,
+        "What is going on?": [
+            "Nothing is going on 😊"
+        ]
+        ,
+        "what is your favorite movie": [
+            "Nacho Libre"
         ]
     }
 }
