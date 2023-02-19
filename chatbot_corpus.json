@@ -76,15 +76,18 @@
             "Those are some of my favorites!"
         ],
         "hello stranger ": [
-            "Hello friend how are you?"
+            "Hello friend how are you?",
+            "Hi, what is your name?"
         ]
         ,
         "What is going on?": [
-            "Nothing is going on 😊"
+            "Nothing is going on 😊",
+            "What do you mean?"
         ]
         ,
         "what is your favorite movie": [
-            "Nacho Libre"
+            "Nacho Libre",
+            "Shrek"
         ]
     }
 }
