@@ -46,7 +46,10 @@
             "outputs": ["Yes, I like <noun>!"]
         },
         {
-            
-        }
+            "label": "introduction",
+            "inputs": ["who are you", "what is your name", "who's this", "who am i talking to"],
+            "outputs": ["Hi I am Steve! Nice to meet you!", "Hi, I'm Steve what is your name?", "Thanks for asking, I am Steve and I am here to help"],
+            "sentiment": 0
+        },
     ]
 }
