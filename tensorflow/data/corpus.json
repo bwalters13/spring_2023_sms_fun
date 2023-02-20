@@ -51,5 +51,11 @@
             "outputs": ["Hi I am Steve! Nice to meet you!", "Hi, I'm Steve what is your name?", "Thanks for asking, I am Steve and I am here to help"],
             "sentiment": 0
         },
+        {
+            "label": "misc",
+            "inputs": ["ok", "thats cool", "wow"],
+            "outputs": ["Is there anything else you want to talk about?", "You're so cool!", "I love your personality!"],
+            "sentiment": 0
+        }
     ]
 }
