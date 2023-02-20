@@ -21,13 +21,12 @@ ignored_words = ["?", "!", ".", ","]
 
 for intent in corpus['intents']:
     label = intent['label']
-    sentiment = intent['sentiment']
     labels.append(label)
 
     for input in intent['inputs']:
         word_list = tokenize(input)
         dictionary.extend(word_list)
-        documents.append((word_list, label, sentiment))
+        documents.append((word_list, label))
   
 dictionary = [stem(word) for word in dictionary if word not in ignored_words]
 dictionary = sorted(set(dictionary))
@@ -41,14 +40,11 @@ output_empty = [0]*len(labels)
 for document in documents:
     bag = []
     word_patterns = document[0]
-    sentiment = document[2]
     word_patterns = [stem(word.lower()) for word in word_patterns]
 
     for word in dictionary:
         bag.append(1) if word in word_patterns else bag.append(0)
     
-    bag.append(sentiment)
-
     output_row = list(output_empty)
     output_row[labels.index(document[1])] = 1
     training.append([bag, output_row])

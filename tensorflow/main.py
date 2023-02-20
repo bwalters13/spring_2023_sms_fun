@@ -4,11 +4,8 @@ import pickle
 import numpy as np
 import nltk
 from keras.models import load_model
-from nltk.stem import WordNetLemmatizer
 from train.nltk_funcs import tokenize, stem
-from nltk.sentiment.vader import SentimentIntensityAnalyzer
 
-sid = SentimentIntensityAnalyzer()
 intents = json.loads(open("data/corpus.json").read())
 words = pickle.load(open('dictionary.pkl', 'rb'))
 classes = pickle.load(open('labels.pkl', 'rb'))
@@ -29,9 +26,6 @@ def bagw(sentence):
                 bag[i] = 1
 
     # Sentiment Analysis
-    ss = sid.polarity_scores(sentence)
-    bag.append(1 if ss['compound'] > -0.05 else -1)
-
     return np.array(bag)
   
 def predict_class(sentence):

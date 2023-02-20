@@ -32,8 +32,8 @@
         },
         {
             "label": "positive filler phrases",
-            "inputs": ["that's great", "thats great", "that's nice", "thats nice", "that's nice", "thats nice", "that's cool", "thats cool", "cool", "nice", "yeah"],
-            "outputs": ["Yeah! 😊"]
+            "inputs": ["that's great", "thats great", "that's nice", "thats nice", "that's nice", "thats nice", "that's cool", "thats cool", "cool", "nice", "yeah", "wow"],
+            "outputs": ["Yeah! 😊", "Is there anything else you want to talk about?", "You're so cool!", "I love your personality!"]
         },
         {
             "label": "thank you",
@@ -46,16 +46,19 @@
             "outputs": ["Yes, I like <noun>!"]
         },
         {
-            "label": "introduction",
-            "inputs": ["who are you", "what is your name", "who's this", "who am i talking to"],
-            "outputs": ["Hi I am Steve! Nice to meet you!", "Hi, I'm Steve what is your name?", "Thanks for asking, I am Steve and I am here to help"],
-            "sentiment": 0
+            "label": "positive want to go place question",
+            "inputs": ["do you want to go to the", "can you go with me to the", "will you go with me to the", "would you be able to go with me to the", "are you able to go with me to the"],
+            "outputs": ["Yes! I would more than love to go to the <noun>!", "Yeah! Of course 😊"]
         },
         {
-            "label": "misc",
-            "inputs": ["ok", "thats cool", "wow"],
-            "outputs": ["Is there anything else you want to talk about?", "You're so cool!", "I love your personality!"],
-            "sentiment": 0
+            "label": "positive what are you doing question",
+            "inputs": ["what are you doing", "what are you doing later", "what you up to", "wyd", "what you doing"],
+            "outputs": ["Nothing much! 😊"]
+        },
+        {
+            "label": "introduction",
+            "inputs": ["who are you", "what is your name", "who's this", "who am i talking to"],
+            "outputs": ["Hi I am Steve! Nice to meet you!", "Hi, I'm Steve what is your name?", "Thanks for asking, I am Steve and I am here to help!"]
         }
     ]
 }
