@@ -57,8 +57,13 @@
         },
         {
             "label": "introduction",
-            "inputs": ["who are you", "what is your name", "who's this", "who am i talking to"],
+            "inputs": ["who are you", "what is your name", "who's this", "who am i talking to", "whos this", "what's your name", "whats your name", "can i have your name", "what would your name be", "how can i call you", "how can i address you", "what are you called", "what do you call yourself", "what does everyone call you"],
             "outputs": ["Hi I am Steve! Nice to meet you!", "Hi, I'm Steve what is your name?", "Thanks for asking, I am Steve and I am here to help!"]
+        },
+        {
+            "label": "introduction response",
+            "inputs": ["my name is", "you can call me"],
+            "outputs": ["It's a pleasure to meet you!"]
         }
     ]
 }
