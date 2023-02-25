@@ -47,8 +47,6 @@ def predict_class(sentence):
 
 def get_name(sentence):
     sent = nlp(sentence.title())
-    for token in sent:
-        print(token, token.pos_)
     return " ".join(token.text for token in sent if token.pos_ == 'PROPN')
 
 
