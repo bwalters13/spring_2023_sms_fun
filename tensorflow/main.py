@@ -33,6 +33,7 @@ def bagw(sentence):
   
 def predict_class(sentence):
     bow = bagw(sentence)
+    print(bow)
     res = model.predict(np.array([bow]))[0]
     ERROR_THRESHOLD = 0.25
     results = [[i, r] for i, r in enumerate(res)
@@ -60,6 +61,10 @@ def get_response(intents_list, intents_json):
             result = random.choice(i['outputs'])
             break
     return result
+
+def get_subject(sentence):
+    sentence = nlp(sentence)
+    return " ".join(token.text for token in sentence if token.dep_ == 'nsubj')
   
 print("Chatbot is up!")
   
@@ -71,4 +76,8 @@ while True:
         name = get_name(message)
         print(name)
         res = res.replace("<name>", name)
+    if ints[0]['intent'] == 'favorite':
+        subject = get_subject(message)
+        res = res.replace("<noun>", subject)
+        
     print(res)

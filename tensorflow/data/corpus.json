@@ -68,6 +68,11 @@
             "label": "misc",
             "inputs": ["ok", "cool", "great"],
             "outputs": ["You are a cool person!", "Is there anything else you want to talk about?"]
+        },
+        {
+            "label": "favorite",
+            "inputs": ["whats your favorite"],
+            "outputs": ["My favorite <noun> is whatever yours is!", "I don't have a favorite <noun>, I love them all!"]
         }
     ]
 }
