@@ -1,6 +1,5 @@
 {
-    "intents": [
-        {
+    "intents": [{
             "label": "simple greeting",
             "inputs": ["hi", "hello", "hey", "yo", "howdy", "sup", "wassup", "wazzup", "hiya", "morning", "g'day", "wsp", "greetings", "good morning", "good afternoon", "good evening", "hello there", "hey man", "hola", "bonjour"],
             "outputs": ["Hello! 😊", "Hey! 😊", "Hi! 😊", "Hello!", "Hey!", "Hi!", "Hey there 😊 How are you today?", "Howdy! How are you doing today?"]
@@ -62,8 +61,13 @@
         },
         {
             "label": "introduction response",
-            "inputs": ["my name is", "you can call me"],
-            "outputs": ["It's a pleasure to meet you!"]
+            "inputs": ["my name is", "you can call me", "hi im ", "hey im", "hello im"],
+            "outputs": ["It's a pleasure to meet you <name>!"]
+        },
+        {
+            "label": "misc",
+            "inputs": ["ok", "cool", "great"],
+            "outputs": ["You are a cool person!", "Is there anything else you want to talk about?"]
         }
     ]
 }

@@ -5,6 +5,9 @@ import numpy as np
 import nltk
 from keras.models import load_model
 from train.nltk_funcs import tokenize, stem
+import spacy
+
+nlp = spacy.load("en_core_web_lg")
 
 intents = json.loads(open("data/corpus.json").read())
 words = pickle.load(open('dictionary.pkl', 'rb'))
@@ -40,13 +43,22 @@ def predict_class(sentence):
         return_list.append({'intent': classes[r[0]],
                             'probability': str(r[1])})
         return return_list
-  
+    
+
+def get_name(sentence):
+    sent = nlp(sentence.title())
+    for token in sent:
+        print(token, token.pos_)
+    return " ".join(token.text for token in sent if token.pos_ == 'PROPN')
+
+
 def get_response(intents_list, intents_json):
     tag = intents_list[0]['intent']
     list_of_intents = intents_json['intents']
+    print(intents_list)
     result = ""
     for i in list_of_intents:
-        if i['label'] == tag:
+        if i['label'] == tag:                
             result = random.choice(i['outputs'])
             break
     return result
@@ -57,4 +69,8 @@ while True:
     message = input("")
     ints = predict_class(message)
     res = get_response(ints, intents)
+    if ints[0]['intent'] == 'introduction response':
+        name = get_name(message)
+        print(name)
+        res = res.replace("<name>", name)
     print(res)
