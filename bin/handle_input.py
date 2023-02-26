@@ -17,10 +17,10 @@ intents = json.loads(open("data/corpus.json").read())
 
 # Model Data
 while True:
-    if os.exists('data/model.h5'):
-        words = pickle.load(open('dictionary.pkl', 'rb'))
-        classes = pickle.load(open('labels.pkl', 'rb'))
-        model = load_model('model.h5')
+    if os.path.exists('data/model.h5'):
+        words = pickle.load(open('data/dictionary.pkl', 'rb'))
+        classes = pickle.load(open('data/labels.pkl', 'rb'))
+        model = load_model('data/model.h5')
         break
     else:
         train_model()

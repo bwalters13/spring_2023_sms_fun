@@ -9,7 +9,7 @@ def load_actor(phone_number: str) -> Actor:
     actor = None
     path = f'users/{phone_number}.pkl'
 
-    if os.exists(path):
+    if os.path.exists(path):
         with os.open(path, 'rb') as data:
             actor = pickle.load(data)
     else:
