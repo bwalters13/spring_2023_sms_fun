@@ -73,16 +73,23 @@ while True:
     ints = predict_class(message)
     res = get_response(ints, intents)
     intent = ints[0]['intent']
+
     if intent == 'introduction response':
         name = get_name(message)
         print(name)
         res = res.replace("<name>", name)
-    elif intent in ['favorite']:
+    elif intent == 'favorite':
         subject = get_subject(message)
         res = res.replace("<noun>", subject)
-    elif intent in ['positive like noun question']:
+    elif intent == 'positive like noun question':
         tags = get_pos_tag(message, ['NN', 'NNS', 'NNP', 'NNPS', 'VBG'])
         if len(tags) > 0:
-            res = res.replace("<noun>", "{}, and {}".format(", ".join(tags[:-1]), tags[-1]))      
+            res = res.replace("<noun>", "{}, and {}".format(", ".join(tags[:-1]), tags[-1]))
+    elif intent == 'positive want to go place question':
+        tags = get_pos_tag(message, ['NN', 'NNS', 'NNP', 'NNPS'])
+        if len(tags) > 0:
+            res = res.replace("<noun>", "{}, and {}".format(", ".join(tags[:-1]), tags[-1]))
+    elif intent == 'weather question':
+        pass
         
     print(res)

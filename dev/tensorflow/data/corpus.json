@@ -6,7 +6,7 @@
         },
         {
             "label": "complex greeting how are you question",
-            "inputs": ["hey how are you", "hey what's up", "hey whats up", "hey how's it going", "hey hows it going", "hey how are you", "hey how are you doing", "hey how are you doing today", "hi how are you", "hi what's up", "hi whats up", "hi how's it going", "hi hows it going", "hi how are you", "hi how are you doing", "hi how are you doing today", "hello how are you", "hello what's up", "hello whats up", "hello how's it going", "hello hows it going", "hello how are you", "hello how are you doing", "hello how are you doing today"],
+            "inputs": ["hey how are you", "hey what's up", "hey whats up", "hey how's it going", "hey hows it going", "hey how are you", "hey how are you doing", "hey how are you doing today", "hi how are you", "hi what's up", "hi whats up", "hi how's it going", "hi hows it going", "hi how are you", "hi how are you doing", "hi how are you doing today", "hello how are you", "hello what's up", "hello whats up", "hello how's it going", "hello hows it going", "hello how are you", "hello how are you doing", "hello how are you doing today", "how do you do"],
             "outputs": ["Hi, I'm doing great!", "I'm great! Thanks for asking! 😊", "I'm feeling perfect 😊 How about you?", "I'm feeling fantastic, how's your day been? 😊", "I'm amazing today, I'm glad you asked!", "Hey! This day has been great! How has your day been?", "I'm doing well, how about you?"]
         },
         {
@@ -36,8 +36,8 @@
         },
         {
             "label": "thank you",
-            "inputs": ["thank you", "thanks", "i appreciate it", "thank you so much", "i'm glad you're here", "im glad you're here", "i'm glad youre here", "im glad youre here", "i want to thank you", "thanks a lot"],
-            "outputs": ["Yeah! Of course 😊", "No worries, I'm trying my best!", "You're my friend, of course!", "No problem! Glad I could help."]
+            "inputs": ["thank you", "thanks", "i appreciate it", "thank you so much", "i'm glad you're here", "im glad you're here", "i'm glad youre here", "im glad youre here", "i want to thank you", "thanks a lot", "i am most grateful", "i'm most grateful", "from the bottom of my heart, thank you", "from the bottom of my heart thank you", "thats so kind of you", "that's so kind of you"],
+            "outputs": ["Yeah! Of course 😊", "No worries, I'm trying my best!", "You're my friend, of course!", "No problem! Glad I could help.", "You're welcome!", "Don't mention it!", "My pleasure 😊"]
         },
         {
             "label": "positive like noun question",
@@ -51,8 +51,8 @@
         },
         {
             "label": "positive what are you doing question",
-            "inputs": ["what are you doing", "what are you doing later", "what you up to", "wyd", "what you doing"],
-            "outputs": ["Nothing much! 😊"]
+            "inputs": ["what are you doing", "what are you doing later", "what you up to", "wyd", "what you doing", "whatcha up to", "what ya doing", "what are you up to"],
+            "outputs": ["Nothing much! 😊", "I'm just talking to you!", ""]
         },
         {
             "label": "introduction",
@@ -78,6 +78,16 @@
             "label": "what are you like",
             "inputs": ["can you tell me about yourself", "what are you like", "tell me about yourself", "what is your personality", "tell me a little about yourself"],
             "outputs": ["I'm a very nice and friendly person!", "A lot of people have told me that I am really helpful."]
+        },
+        {
+            "label": "asking for help",
+            "inputs": ["can you help me please", "can you help me, please", "i need some assistance", "could you give me a hand", "i need your support", "could you do me a favor", "would you mind helping me, please", "would you mind helping me please", "could you lend me a hand", "i need a helping hand"],
+            "outputs": ["Yes, of course! I would be happy to help. What do you need help with?", "What do you need help with? I'll try my best! 😊"]
+        },
+        {
+            "label": "weather question",
+            "inputs": ["how's the weather", "hows the weather", "whats it like outside", "what's it like outside", "what's the temperature outside"],
+            "outputs": ["Here in San Marcos, it is <temperature>."]
         }
     ]
 }
