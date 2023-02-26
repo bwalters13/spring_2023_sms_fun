@@ -1,55 +1,36 @@
-import yaml
-from flask import request, g, make_response
-from os.path import exists
-from tools.config import yml_configs
-
-from tools.logging import logger
-from classes.actor import actor
-
-import random
-import json
+import os
 import pickle
+from flask import request, g
+from classes.Actor import Actor
+from tools.config import yml_configs
+from bin.handle_input import handle_input
 
-BODY_MSGS = []
+def load_actor(phone_number: str) -> Actor:
+    actor = None
+    path = f'users/{phone_number}.pkl'
 
-CORPUS = {}
+    if os.exists(path):
+        with os.open(path, 'rb') as data:
+            actor = pickle.load(data)
+    else:
+        actor = Actor(phone_number)
 
-with open('chatbot_corpus.json', 'r') as myfile:
-    CORPUS = json.loads(myfile.read())
-
+    return actor
 
 def handle_request():
-    logger.debug(request.form)
+    phone_number = request.form['From']
 
-    act = None
-    if exists( f"users/{request.form['From']}.pkl") :
-        with open(f"users/{request.form['From']}.pkl", 'rb') as p:
-            act = pickle.load(p) 
-    else:
-        act= actor(request.form['From'])
+    actor = load_actor(phone_number)
 
-    act.save_msg(request.form['Body'])
-    logger.debug(act.prev_msgs)
+    input_msg = request.form['Body']
+    output_msg = handle_input(actor, input_msg)
+
+    g.sms_client.messages.create(
+        body = output_msg,
+        from_ = yml_configs['twilio']['phone_number'],
+        to = request.form['From'])
     
-
-    with open(f"users/{request.form['From']}.pkl", 'wb') as p:
-        pickle.dump(act,p)
-
-    response = 'NOT FOUND'
-
-    sent_input = str(request.form['Body']).lower()
-    if sent_input in CORPUS['input']:
-        response = random.choice(CORPUS['input'][sent_input])
-    else:
-        CORPUS['input'][sent_input] = ['DID NOT FIND']
-        with open('chatbot_corpus.json', 'w') as myfile:
-            myfile.write(json.dumps(CORPUS, indent=4 ))
-
-    logger.debug(response)
-
-    message = g.sms_client.messages.create(
-                     body=response,
-                     from_=yml_configs['twilio']['phone_number'],
-                     to=request.form['From'])
+    actor.save_msg(input_msg)
+    actor.save()
 
     return "OK", 200

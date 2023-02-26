@@ -1,18 +1,29 @@
+import os
 import random
 import json
 import pickle
 import numpy as np
 import nltk
-from keras.models import load_model
-from train.nltk_funcs import tokenize, stem
 import spacy
-
+from classes.Actor import Actor
+from keras.models import load_model
+from bin.nltk_funcs import tokenize, stem
+from bin.train import train_model
+# Load Modules
 nlp = spacy.load("en_core_web_lg")
 
+# Corpus Data
 intents = json.loads(open("data/corpus.json").read())
-words = pickle.load(open('dictionary.pkl', 'rb'))
-classes = pickle.load(open('labels.pkl', 'rb'))
-model = load_model('model.h5')
+
+# Model Data
+while True:
+    if os.exists('data/model.h5'):
+        words = pickle.load(open('dictionary.pkl', 'rb'))
+        classes = pickle.load(open('labels.pkl', 'rb'))
+        model = load_model('model.h5')
+        break
+    else:
+        train_model()
 
 ERROR_THRESHOLD = 0.25
   
@@ -67,29 +78,28 @@ def get_pos_tag(sentence, tags):
     tokenized = tokenize(sentence)
     return [word for (word, pos) in nltk.pos_tag(tokenized) if pos in tags]
 
-# Chat Loop
-while True:
-    message = input("")
-    ints = predict_class(message)
-    res = get_response(ints, intents)
+# Main Function
+def handle_input(actor: Actor, input_message: str) -> str:
+    ints = predict_class(input_message)
+    output_message = get_response(ints, intents)
     intent = ints[0]['intent']
 
     if intent == 'introduction response':
-        name = get_name(message)
+        name = get_name(input_message)
         print(name)
-        res = res.replace("<name>", name)
+        output_message = output_message.replace("<name>", name)
     elif intent == 'favorite':
-        subject = get_subject(message)
-        res = res.replace("<noun>", subject)
+        subject = get_subject(input_message)
+        output_message = output_message.replace("<noun>", subject)
     elif intent == 'positive like noun question':
-        tags = get_pos_tag(message, ['NN', 'NNS', 'NNP', 'NNPS', 'VBG'])
+        tags = get_pos_tag(input_message, ['NN', 'NNS', 'NNP', 'NNPS', 'VBG'])
         if len(tags) > 0:
-            res = res.replace("<noun>", "{}, and {}".format(", ".join(tags[:-1]), tags[-1]))
+            output_message = output_message.replace("<noun>", "{}, and {}".format(", ".join(tags[:-1]), tags[-1]))
     elif intent == 'positive want to go place question':
-        tags = get_pos_tag(message, ['NN', 'NNS', 'NNP', 'NNPS'])
+        tags = get_pos_tag(input_message, ['NN', 'NNS', 'NNP', 'NNPS'])
         if len(tags) > 0:
-            res = res.replace("<noun>", "{}, and {}".format(", ".join(tags[:-1]), tags[-1]))
+            output_message = output_message.replace("<noun>", "{}, and {}".format(", ".join(tags[:-1]), tags[-1]))
     elif intent == 'weather question':
         pass
-        
-    print(res)
+
+    return output_message
