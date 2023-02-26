@@ -45,6 +45,11 @@
             "outputs": ["Yes, I like <noun>!", "Yeah, I love <noun>!"]
         },
         {
+            "label": "negative like noun",
+            "inputs": ["i dont like", "i don't like", "i hate", "i dislike", "i'm not a fan of", "im not a fan of"],
+            "outputs": ["I'm sorry to hear that! Why don't you like <noun>?", "Is there any reason in particular you don't like <noun>?", "Why not?"]
+        },
+        {
             "label": "positive want to go place question",
             "inputs": ["do you want to go to the", "can you go with me to the", "will you go with me to the", "would you be able to go with me to the", "are you able to go with me to the"],
             "outputs": ["Yes! I would more than love to go to the <noun>!", "Yeah! Of course 😊"]
