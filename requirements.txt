@@ -6,5 +6,5 @@ twilio>=7.16.3
 NLTK
 vaderSentiment
 numpy
-tensorflow
+tensorflow-cpu
 spacy
