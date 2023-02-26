@@ -9,6 +9,7 @@ from classes.Actor import Actor
 from keras.models import load_model
 from bin.nltk_funcs import tokenize, stem
 from bin.train import train_model
+
 # Load Modules
 nlp = spacy.load("en_core_web_lg")
 
