@@ -1,0 +1,93 @@
+{
+    "input": {
+        "hello": [
+            "Hi!😊 How are you doing today?",
+            "Hello!",
+            "Hey there! How are you?",
+            "Howdy! How may I help you on this wonderful day?"
+        ],
+        "i'm doing well how are you?": [
+            "I'm doing really great thanks!😊"
+        ],
+
+        "goodbye": [
+            "Have an amazing day!",
+            "Have a beautiful day! 😊 ",
+            "Feel free to visit us again anytime!",
+            "Goodbye. Don't be a stranger! ",
+            "It was nice chatting with you! Take care! ",
+            "I wish you the best! ",
+            "Good bye! Always stay positive! 😊"
+        ],
+        "i love you": [
+            "I love you too you're an amazing person"
+        ],
+        "thanks": [
+            "No, thank you!",
+            "Not a problem! ",
+            "Happy to help!",
+            "My pleasure!",
+            "I am here to help!"
+        ],
+        "": [
+            "I apologize, I didn't get your response.",
+            "Did you type something? I'm sorry, It must have not gone through",
+            "Can you resend the message? I did not receive it."
+        ],
+        "how are you?": [
+            "I am doing fantastic, thank you for asking!😊",
+            "Amazing, and I hope you are too!",
+            "If I had a tail, I would wag it!",
+            "11/10!",
+            "Fantastic!"
+        ],
+
+        "h": [
+            "DID NOT FIND"
+        ],
+        "aaaaaaaaaaaaaaaaaaa": [
+            "DID NOT FIND"
+        ],
+        "\\": [
+            "DID NOT FIND"
+        ],
+        "l": [
+            "DID NOT FIND"
+        ],
+        "hi": [
+            "Hello, how are you on this blessed day? 😊"
+        ],
+        "pogchamp": [
+            "DID NOT FIND"
+        ],
+        "heyo": [
+            "DID NOT FIND"
+        ],
+        "yo": [
+            "Hello, how are you on this blessed day? 😊"
+        ],
+        "testing first": [
+            "What are you testing?"
+        ],
+        "testing second ": [
+            "What are you testing?"
+        ],
+        "\ud83d\ude2d\ud83d\ude2d\ud83d\ude2d": [
+            "Those are some of my favorites!"
+        ],
+        "hello stranger ": [
+            "Hello friend how are you?",
+            "Hi, what is your name?"
+        ]
+        ,
+        "What is going on?": [
+            "Nothing is going on 😊",
+            "What do you mean?"
+        ]
+        ,
+        "what is your favorite movie": [
+            "Nacho Libre",
+            "Shrek"
+        ]
+    }
+}
