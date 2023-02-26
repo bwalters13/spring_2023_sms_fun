@@ -41,8 +41,8 @@
         },
         {
             "label": "positive like noun question",
-            "inputs": ["do you like"],
-            "outputs": ["Yes, I like <noun>!"]
+            "inputs": ["do you like", "how do you feel about", "do you like and"],
+            "outputs": ["Yes, I like <noun>!", "Yeah, I love <noun>!"]
         },
         {
             "label": "positive want to go place question",

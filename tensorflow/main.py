@@ -16,6 +16,7 @@ model = load_model('model.h5')
 
 ERROR_THRESHOLD = 0.25
   
+# Classification Functions
 def clean_up_sentences(sentence):
     sentence_words = tokenize(sentence)
     sentence_words = [stem(word) for word in sentence_words]
@@ -36,20 +37,12 @@ def predict_class(sentence):
 
     res = model.predict(np.array([bow]))[0]
 
-    results = [[i, r] for i, r in enumerate(res)
-               if r > ERROR_THRESHOLD]
+    results = [[i, r] for i, r in enumerate(res) if r > ERROR_THRESHOLD]
     results.sort(key=lambda x: x[1], reverse=True)
     return_list = []
     for r in results:
-        return_list.append({'intent': classes[r[0]],
-                            'probability': str(r[1])})
+        return_list.append({'intent': classes[r[0]], 'probability': str(r[1])})
         return return_list
-    
-
-def get_name(sentence):
-    sent = nlp(sentence.title())
-    return " ".join(token.text for token in sent if token.pos_ == 'PROPN')
-
 
 def get_response(intents_list, intents_json):
     tag = intents_list[0]['intent']
@@ -61,21 +54,35 @@ def get_response(intents_list, intents_json):
             break
     return result
 
+# Helper Functions
+def get_name(sentence):
+    sent = nlp(sentence.title())
+    return " ".join(token.text for token in sent if token.pos_ == 'PROPN')
+
 def get_subject(sentence):
     sentence = nlp(sentence)
     return " ".join(token.text for token in sentence if token.dep_ == 'nsubj')
-  
-  
+
+def get_pos_tag(sentence, tags):
+    tokenized = tokenize(sentence)
+    return [word for (word, pos) in nltk.pos_tag(tokenized) if pos in tags]
+
+# Chat Loop
 while True:
     message = input("")
     ints = predict_class(message)
     res = get_response(ints, intents)
-    if ints[0]['intent'] == 'introduction response':
+    intent = ints[0]['intent']
+    if intent == 'introduction response':
         name = get_name(message)
         print(name)
         res = res.replace("<name>", name)
-    if ints[0]['intent'] == 'favorite':
+    elif intent in ['favorite']:
         subject = get_subject(message)
         res = res.replace("<noun>", subject)
+    elif intent in ['positive like noun question']:
+        tags = get_pos_tag(message, ['NN', 'NNS', 'NNP', 'NNPS', 'VBG'])
+        if len(tags) > 0:
+            res = res.replace("<noun>", "{}, and {}".format(", ".join(tags[:-1]), tags[-1]))      
         
     print(res)
