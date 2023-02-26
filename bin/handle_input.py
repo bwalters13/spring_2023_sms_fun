@@ -5,7 +5,7 @@ import pickle
 import numpy as np
 import nltk
 import spacy
-from classes.Actor import Actor
+from classes.actor import Actor
 from keras.models import load_model
 from bin.nltk_funcs import tokenize, stem
 from bin.train import train_model

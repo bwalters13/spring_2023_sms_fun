@@ -1,7 +1,7 @@
 import os
 import pickle
 from flask import request, g
-from classes.Actor import Actor
+from classes.actor import Actor
 from tools.config import yml_configs
 from bin.handle_input import handle_input
 

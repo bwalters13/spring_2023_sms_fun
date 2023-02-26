@@ -1,7 +1,7 @@
 import os
 import pickle
 
-class Actor:
+class actor:
     def __init__(self, phone_number):
         self.phone = phone_number
         self.path = f'users/{phone_number}.pkl'
