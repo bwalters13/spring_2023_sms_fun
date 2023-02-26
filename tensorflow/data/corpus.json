@@ -66,13 +66,18 @@
         },
         {
             "label": "misc",
-            "inputs": ["ok", "cool", "great"],
+            "inputs": ["ok", "cool", "great", "lol", "lmao", "ok", "kk", "alr", "alright", "k"],
             "outputs": ["You are a cool person!", "Is there anything else you want to talk about?"]
         },
         {
             "label": "favorite",
             "inputs": ["whats your favorite"],
             "outputs": ["My favorite <noun> is whatever yours is!", "I don't have a favorite <noun>, I love them all!"]
+        },
+        {
+            "label": "what are you like",
+            "inputs": ["can you tell me about yourself", "what are you like", "tell me about yourself", "what is your personality", "tell me a little about yourself"],
+            "outputs": ["I'm a very nice and friendly person!", "A lot of people have told me that I am really helpful."]
         }
     ]
 }

@@ -13,29 +13,29 @@ intents = json.loads(open("data/corpus.json").read())
 words = pickle.load(open('dictionary.pkl', 'rb'))
 classes = pickle.load(open('labels.pkl', 'rb'))
 model = load_model('model.h5')
+
+ERROR_THRESHOLD = 0.25
   
 def clean_up_sentences(sentence):
     sentence_words = tokenize(sentence)
-    sentence_words = [stem(word)
-                      for word in sentence_words]
+    sentence_words = [stem(word) for word in sentence_words]
     return sentence_words
   
-def bagw(sentence):
+def bag_of_words(sentence):
     sentence_words = clean_up_sentences(sentence)
-    bag = [0]*len(words) # Words + Sentiment
+    bag = [0]*len(words)
     for w in sentence_words:
         for i, word in enumerate(words):
             if word == w:
                 bag[i] = 1
 
-    # Sentiment Analysis
     return np.array(bag)
   
 def predict_class(sentence):
-    bow = bagw(sentence)
-    print(bow)
+    bow = bag_of_words(sentence)
+
     res = model.predict(np.array([bow]))[0]
-    ERROR_THRESHOLD = 0.25
+
     results = [[i, r] for i, r in enumerate(res)
                if r > ERROR_THRESHOLD]
     results.sort(key=lambda x: x[1], reverse=True)
@@ -65,7 +65,6 @@ def get_subject(sentence):
     sentence = nlp(sentence)
     return " ".join(token.text for token in sentence if token.dep_ == 'nsubj')
   
-print("Chatbot is up!")
   
 while True:
     message = input("")
