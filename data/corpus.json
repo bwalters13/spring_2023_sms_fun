@@ -105,8 +105,14 @@
         },
         {
             "label": "colors",
-            "inputs": [ "favorite color?", "Favorite color?", "what is your favorite color?", "What is your favorite color?", "Do you have a favorite color?", "Do you have a favorite color?", "do you have a favorite color?" ],
+            "inputs": [ "colors","favorite color?", "Favorite color?", "what is your favorite color?", "What is your favorite color?", "Do you have a favorite color?", "Do you have a favorite color?", "do you have a favorite color?" ],
             "outputs": [ "I love the color Blue! What is yours?", "I love the color Green! What is yours? ", "I love the color Purple! What is yours?", "I love the color Pink! What is yours?", "I love the color Blue! What is yours?" ]
+        },
+        {
+            "label": "colors response",
+            "inputs": [ "Blue", "Green", "Yellow", "Red", "Brown", "Pink", "Purple", "Black", "White"],
+            "outputs": [ "<color> is a a great choice! That's my second favorite!", "<color> is awesome! Great choice!"],
+            "error_outputs": [ "That's a unique color!", "That's a great choice!" ]
         },
         {
             "label": "hobbies",
@@ -122,6 +128,16 @@
             "label": "positive comment",
             "inputs": [ "you're amazing", "youre amazing", "you are amazing", "your amazing", "you're great", "youre great", "your great", "i think you are pretty good", "you're a good person", "youre a good person", "you are a good person" ],
             "outputs": [ "Thank you! I really appreciate those words. 😊", "Awww 🥺 Thank you for those kind words!", "No, I think you're amazing!" ]
+        },
+        {
+            "label": "robot",
+            "inputs": [ "robot?","Are you a robot","Are you fake?", "Am i talking to a bot","Are you real?"],
+            "outputs": [ "Ofcourse not! My name is Steve. Nice to meet you!", "Ofcourse not! My name is Steve." ]
+        },
+        {
+            "label": "age",
+            "inputs": [ "how old are you", "what is your age","can you tell me your birthday", "can you give you your date of birth? " ],
+            "outputs": [ "That's sweet of you to ask my age, but I never reveal my secrets", "Your funny. I can't reveal my age here" ]
         }
     ]
 }

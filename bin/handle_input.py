@@ -115,6 +115,12 @@ def handle_input(actor: Actor, input_message: str) -> str:
                 output_message = output_message.replace("<noun>", subject[0])
             else:
                 output_message = error_message
+        elif intent == 'colors response':
+            subject = get_pos_tag(input_message, ['JJ','NN', 'NNS', 'NNP'])
+            if len(subject) > 0:
+                output_message = output_message.replace("<color>", subject[0])
+            else:
+                output_message = error_message
         elif intent == 'positive like noun question':
             tags = get_pos_tag(sentence, ['NN', 'NNS', 'NNP', 'NNPS', 'VBG'])
             output_message = output_message.replace("<noun>", format_list(tags))
