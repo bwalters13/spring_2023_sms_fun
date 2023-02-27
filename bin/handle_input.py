@@ -4,10 +4,9 @@ import json
 import pickle
 import numpy as np
 import nltk
-import spacy
 from classes.actor import Actor
 from keras.models import load_model
-from bin.nltk_funcs import tokenize, stem
+from bin.nltk_funcs import tokenize, stem, split_sentences
 from bin.train import train_model
 
 # Load Modules
@@ -81,6 +80,10 @@ def format_list(list):
 
 # Main Function
 def handle_input(actor: Actor, input_message: str) -> str:
+    sentences = split_sentences(input_message)
+    
+    print(sentences)
+
     ints = predict_class(input_message)
     output_message = get_response(ints, intents)
     intent = ints[0]['intent']
