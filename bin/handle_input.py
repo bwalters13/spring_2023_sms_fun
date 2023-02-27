@@ -5,6 +5,7 @@ import pickle
 import numpy as np
 import nltk
 import requests
+import re
 from classes.actor import Actor
 from keras.models import load_model
 from bin.nltk_funcs import tokenize, stem, split_sentences
@@ -132,11 +133,15 @@ def handle_input(actor: Actor, input_message: str) -> str:
                 location = "San Marcos"
 
             # Create Google Query
-            location.replace(" ", "+")
             url = f"https://www.google.com/search?q=weather+{location}"
-            html = requests.get(url).content
+            html = requests.get(url).text
 
-            print(html)
+            temperature = re.search(r'class="BNeawe iBp4i AP7Wnd">([0-9]+.*?)</div>', html)
+            if temperature:
+                temperature = temperature.group(1)
+
+                output_message = output_message.replace("<location>", location)
+                output_message = output_message.replace("<temperature>", temperature)
 
         output_messages.append(output_message)
 
