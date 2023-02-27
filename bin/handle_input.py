@@ -8,6 +8,10 @@ from classes.actor import Actor
 from keras.models import load_model
 from bin.nltk_funcs import tokenize, stem, split_sentences
 from bin.train import train_model
+from nltk.tag.stanford import StanfordNERTagger
+
+# NLTK
+nertTagger = StanfordNERTagger('stanford-ner/all.3class.distsim.crf.ser.gz', 'stanford-ner/stanford-ner.jar')
 
 # Load Modules
 # nlp = spacy.load("en_core_web_lg")
@@ -65,6 +69,9 @@ def get_response(intents_list, intents_json):
     return result
 
 # Helper Functions
+def get_name(sentence):
+    return [word for (word, pos) in nertTagger.tag(tokenize(sentence))]
+
 def get_pos_tag(sentence, tags):
     tokenized = tokenize(sentence)
     return [word for (word, pos) in nltk.pos_tag(tokenized) if pos in tags]
@@ -90,7 +97,7 @@ def handle_input(actor: Actor, input_message: str) -> str:
         intent = ints[0]['intent']
 
         if intent == 'introduction response':
-            name = get_pos_tag(sentence, ['NNP'])
+            name = get_name(sentence)
             if len(name) > 0:
                 output_message = output_message.replace("<name>", name[0])
         elif intent == 'favorite':
@@ -107,7 +114,5 @@ def handle_input(actor: Actor, input_message: str) -> str:
             pass
 
         output_messages.append(output_message)
-
-        print([(word, pos) for (word, pos) in nltk.pos_tag(tokenize(sentence))])
 
     return output_messages
