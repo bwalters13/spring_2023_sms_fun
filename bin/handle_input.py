@@ -11,7 +11,7 @@ from bin.train import train_model
 from nltk.tag.stanford import StanfordNERTagger
 
 # NLTK
-nertTagger = StanfordNERTagger('stanford-ner/all.3class.distsim.crf.ser.gz', 'stanford-ner/stanford-ner.jar')
+nertTagger = StanfordNERTagger('data/stanford-ner/classifiers/english.all.3class.distsim.crf.ser.gz', 'data/stanford-ner/stanford-ner.jar')
 
 # Load Modules
 # nlp = spacy.load("en_core_web_lg")
