@@ -9,10 +9,9 @@ from classes.actor import Actor
 from keras.models import load_model
 from bin.nltk_funcs import tokenize, stem
 from bin.train import train_model
-print(1)
+
 # Load Modules
-#nlp = spacy.load("en_core_web_lg")
-print(2)
+# nlp = spacy.load("en_core_web_lg")
 # Corpus Data
 intents = json.loads(open("data/corpus.json").read())
 
@@ -67,16 +66,6 @@ def get_response(intents_list, intents_json):
     return result
 
 # Helper Functions
-def get_name(sentence):
-    #sent = nlp(sentence.title())
-    #return " ".join(token.text for token in sent if token.pos_ == 'PROPN')
-    return []
-
-def get_subject(sentence):
-    #sentence = nlp(sentence)
-    #return " ".join(token.text for token in sentence if token.dep_ == 'nsubj')
-    return []
-
 def get_pos_tag(sentence, tags):
     tokenized = tokenize(sentence)
     return [word for (word, pos) in nltk.pos_tag(tokenized) if pos in tags]
@@ -88,12 +77,13 @@ def handle_input(actor: Actor, input_message: str) -> str:
     intent = ints[0]['intent']
 
     if intent == 'introduction response':
-        name = get_name(input_message)
-        print(name)
-        output_message = output_message.replace("<name>", name)
+        name = get_pos_tag(input_message, ['NNP'])
+        if len(name) > 0:
+            output_message = output_message.replace("<name>", name)
     elif intent == 'favorite':
-        subject = get_subject(input_message)
-        output_message = output_message.replace("<noun>", subject)
+        #subject = get_subject(input_message)
+        #output_message = output_message.replace("<noun>", subject)
+        pass
     elif intent == 'positive like noun question':
         tags = get_pos_tag(input_message, ['NN', 'NNS', 'NNP', 'NNPS', 'VBG'])
         if len(tags) > 0:
@@ -104,5 +94,7 @@ def handle_input(actor: Actor, input_message: str) -> str:
             output_message = output_message.replace("<noun>", "{}, and {}".format(", ".join(tags[:-1]), tags[-1]))
     elif intent == 'weather question':
         pass
+
+    print([(word, pos) for (word, pos) in nltk.pos_tag(tokenize(input_message))])
 
     return output_message
