@@ -74,3 +74,6 @@ def train_model():
     
     # saving the model
     model.save("data/model.h5", hist)
+
+if __name__ == '__main__':
+    train_model()
