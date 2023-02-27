@@ -69,12 +69,12 @@
         },
         {
             "label": "misc",
-            "inputs": [ "ok", "cool", "great", "lol", "lmao", "ok", "kk", "alr", "alright", "k" ],
+            "inputs": [ "ok", "cool", "great", "lol", "lmao", "ok", "kk", "alr", "alright", "k", "mk" ],
             "outputs": [ "You are a cool person!", "Is there anything else you want to talk about?" ]
         },
         {
             "label": "favorite",
-            "inputs": [ "whats your favorite" ],
+            "inputs": [ "whats your favorite", "do you have a favorite" ],
             "outputs": [ "My favorite <noun> is whatever yours is!", "I don't have a favorite <noun>, I love them all!" ],
             "error_outputs": [ "I'm sorry, what is my favorite what?", "I didn't quite get that, what is my favorite?" ]
         },
@@ -90,8 +90,8 @@
         },
         {
             "label": "weather question",
-            "inputs": [ "how's the weather", "hows the weather", "whats it like outside", "what's it like outside", "what's the temperature outside" ],
-            "outputs": [ "Here in San Marcos, it is <temperature>." ]
+            "inputs": [ "how's the weather", "hows the weather", "whats it like outside", "what's it like outside", "what's the temperature outside", "what is the weather in", "what's the weather in", "is it hot outside", "is it cold outside" ],
+            "outputs": [ "Well in <location>, it is <temperature>." ]
         },
         {
             "label": "what to do questions",
@@ -99,7 +99,7 @@
             "outputs": [ "You should get some fresh air!", "The climate is nice, you should take a walk!", "I hear there are nice hikes in your area!", "There are some good movies out right now!" ]
         },
         {
-            "label": "Sad responses",
+            "label": "sad responses",
             "inputs": [ "I feel sad today", "I feeling sad today", "feeling sad", "I feel down today", "feeling down", "I feeling down today", ":(", "=(", "its been a rough day" ],
             "outputs": [ "Don't feel down! I bet your day will get much better!", "Don't feel sad! I am sending you lots of positivity!", "Keep your chin up! Things will get better!" ]
         },
@@ -119,9 +119,14 @@
             "outputs": [ "I love to hike! Thank you for asking! ", "I love to read books! It's nice of you to ask!", "I love the watching movies! They are so relaxing!", "I love playing sports! It's great excercise!" ]
         },
         {
-            "label": "Negative",
-            "inputs": [ "Your dumb", "You're dumb", "Go away", "go away", "Stupid", "stupid!"],
+            "label": "negative comment",
+            "inputs": [ "Your dumb", "You're dumb", "Go away", "go away", "Stupid", "stupid!", "you're stupid", "youre stupid", "youre dumb" ],
             "outputs": [ "I'm sorry you feel that way. If you feel more positive, feel free to stop by again!", "Sometimes people have bad days. If you want a friend to talk to, come back!" ]
+        },
+        {
+            "label": "positive comment",
+            "inputs": [ "you're amazing", "youre amazing", "you are amazing", "your amazing", "you're great", "youre great", "your great", "i think you are pretty good", "you're a good person", "youre a good person", "you are a good person" ],
+            "outputs": [ "Thank you! I really appreciate those words. 😊", "Awww 🥺 Thank you for those kind words!", "No, I think you're amazing!" ]
         }
     ]
 }

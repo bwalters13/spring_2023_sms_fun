@@ -4,6 +4,7 @@ import json
 import pickle
 import numpy as np
 import nltk
+import requests
 from classes.actor import Actor
 from keras.models import load_model
 from bin.nltk_funcs import tokenize, stem, split_sentences
@@ -49,7 +50,7 @@ def bag_of_words(sentence):
 def predict_class(sentence):
     bow = bag_of_words(sentence)
 
-    res = model.predict(np.array([bow]))[0]
+    res = model.predict(np.array([bow]), verbose=0)[0]
 
     results = [[i, r] for i, r in enumerate(res) if r > ERROR_THRESHOLD]
     results.sort(key=lambda x: x[1], reverse=True)
@@ -123,7 +124,19 @@ def handle_input(actor: Actor, input_message: str) -> str:
             else:
                 output_message = error_message
         elif intent == 'weather question':
-            pass
+            location = get_ner_tag(sentence, ['LOCATION'])
+
+            if len(location) > 0:
+                location = location[0]
+            else:
+                location = "San Marcos"
+
+            # Create Google Query
+            location.replace(" ", "+")
+            url = f"https://www.google.com/search?q=weather+{location}"
+            html = requests.get(url).content
+
+            print(html)
 
         output_messages.append(output_message)
 
