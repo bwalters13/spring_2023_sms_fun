@@ -11,7 +11,7 @@ from bin.nltk_funcs import tokenize, stem
 from bin.train import train_model
 print(1)
 # Load Modules
-nlp = spacy.load("en_core_web_lg")
+#nlp = spacy.load("en_core_web_lg")
 print(2)
 # Corpus Data
 intents = json.loads(open("data/corpus.json").read())
@@ -68,12 +68,14 @@ def get_response(intents_list, intents_json):
 
 # Helper Functions
 def get_name(sentence):
-    sent = nlp(sentence.title())
-    return " ".join(token.text for token in sent if token.pos_ == 'PROPN')
+    #sent = nlp(sentence.title())
+    #return " ".join(token.text for token in sent if token.pos_ == 'PROPN')
+    return []
 
 def get_subject(sentence):
-    sentence = nlp(sentence)
-    return " ".join(token.text for token in sentence if token.dep_ == 'nsubj')
+    #sentence = nlp(sentence)
+    #return " ".join(token.text for token in sentence if token.dep_ == 'nsubj')
+    return []
 
 def get_pos_tag(sentence, tags):
     tokenized = tokenize(sentence)
