@@ -70,7 +70,7 @@ def get_response(intents_list, intents_json):
 
 # Helper Functions
 def get_name(sentence):
-    return [word for (word, pos) in nertTagger.tag(tokenize(sentence))]
+    return [word for (word, pos) in nertTagger.tag(tokenize(sentence)) if pos == "PERSON"]
 
 def get_pos_tag(sentence, tags):
     tokenized = tokenize(sentence)
