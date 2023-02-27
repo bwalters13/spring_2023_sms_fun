@@ -108,4 +108,6 @@ def handle_input(actor: Actor, input_message: str) -> str:
 
         output_messages.append(output_message)
 
+        print([(word, pos) for (word, pos) in nltk.pos_tag(tokenize(sentence))])
+
     return output_messages
