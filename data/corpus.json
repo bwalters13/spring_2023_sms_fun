@@ -2,7 +2,7 @@
     "intents": [{
             "label": "simple greeting",
             "inputs": ["hi", "hello", "hey", "yo", "howdy", "sup", "wassup", "wazzup", "hiya", "morning", "g'day", "wsp", "greetings", "good morning", "good afternoon", "good evening", "hello there", "hey man", "hola", "bonjour"],
-            "outputs": ["Hello! 😊", "Hey! 😊", "Hi! 😊", "Hello!", "Hey!", "Hi!", "Hey there 😊 How are you today?", "Howdy! How are you doing today?"]
+            "outputs": ["Hello! 😊", "Hey! 😊", "Hi! 😊", "Hello! How are you!?", "What's up! How's it going?", "Hi there!", "Hey there 😊 How are you today?", "Howdy! How are you doing today?"]
         },
         {
             "label": "complex greeting how are you question",

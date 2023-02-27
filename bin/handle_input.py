@@ -79,7 +79,7 @@ def handle_input(actor: Actor, input_message: str) -> str:
     if intent == 'introduction response':
         name = get_pos_tag(input_message, ['NNP'])
         if len(name) > 0:
-            output_message = output_message.replace("<name>", name)
+            output_message = output_message.replace("<name>", name[0])
     elif intent == 'favorite':
         #subject = get_subject(input_message)
         #output_message = output_message.replace("<noun>", subject)
