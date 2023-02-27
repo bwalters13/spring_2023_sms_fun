@@ -127,6 +127,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-dev/tensorflow/model.h5
-dev/tensorflow/dictionary.pkl
-dev/tensorflow/labels.pkl
+data/directory.pkl
+data/labels.pkl
+data/model.h5
