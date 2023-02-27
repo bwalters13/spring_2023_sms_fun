@@ -81,30 +81,31 @@ def format_list(list):
 # Main Function
 def handle_input(actor: Actor, input_message: str) -> str:
     sentences = split_sentences(input_message)
-    
-    print(sentences)
 
-    ints = predict_class(input_message)
-    output_message = get_response(ints, intents)
-    intent = ints[0]['intent']
+    output_messages = []
 
-    if intent == 'introduction response':
-        name = get_pos_tag(input_message, ['NNP'])
-        if len(name) > 0:
-            output_message = output_message.replace("<name>", name[0])
-    elif intent == 'favorite':
-        #subject = get_subject(input_message)
-        #output_message = output_message.replace("<noun>", subject)
-        pass
-    elif intent == 'positive like noun question':
-        tags = get_pos_tag(input_message, ['NN', 'NNS', 'NNP', 'NNPS', 'VBG'])
-        output_message = output_message.replace("<noun>", format_list(tags))
-    elif intent == 'positive want to go place question':
-        tags = get_pos_tag(input_message, ['NN', 'NNS', 'NNP', 'NNPS'])
-        output_message = output_message.replace("<noun>", format_list(tags))
-    elif intent == 'weather question':
-        pass
+    for sentence in sentences:
+        ints = predict_class(sentence)
+        output_message = get_response(ints, intents)
+        intent = ints[0]['intent']
 
-    print([(word, pos) for (word, pos) in nltk.pos_tag(tokenize(input_message))])
+        if intent == 'introduction response':
+            name = get_pos_tag(sentence, ['NNP'])
+            if len(name) > 0:
+                output_message = output_message.replace("<name>", name[0])
+        elif intent == 'favorite':
+            #subject = get_subject(input_message)
+            #output_message = output_message.replace("<noun>", subject)
+            pass
+        elif intent == 'positive like noun question':
+            tags = get_pos_tag(sentence, ['NN', 'NNS', 'NNP', 'NNPS', 'VBG'])
+            output_message = output_message.replace("<noun>", format_list(tags))
+        elif intent == 'positive want to go place question':
+            tags = get_pos_tag(sentence, ['NN', 'NNS', 'NNP', 'NNPS'])
+            output_message = output_message.replace("<noun>", format_list(tags))
+        elif intent == 'weather question':
+            pass
 
-    return output_message
+        output_messages.append(output_message)
+
+    return output_messages

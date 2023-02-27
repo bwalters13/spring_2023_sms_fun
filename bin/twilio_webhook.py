@@ -23,14 +23,15 @@ def handle_request():
     actor = load_actor(phone_number)
 
     input_msg = request.form['Body']
-    output_msg = handle_input(actor, input_msg)
+    output_msgs = handle_input(actor, input_msg)
 
-    g.sms_client.messages.create(
-        body = output_msg,
-        from_ = yml_configs['twilio']['phone_number'],
-        to = request.form['From'])
-    
-    actor.save_msg(input_msg)
+    for output_msg in output_msgs:
+        g.sms_client.messages.create(
+            body = output_msg,
+            from_ = yml_configs['twilio']['phone_number'],
+            to = request.form['From'])
+        
+        actor.save_msg(input_msg)
     actor.save()
 
     return "OK", 200
