@@ -117,7 +117,7 @@ def handle_input(actor: Actor, input_message: str) -> str:
             tags = get_pos_tag(sentence, ['NN', 'NNS', 'NNP', 'NNPS', 'VBG'])
             output_message = output_message.replace("<noun>", format_list(tags))
         elif intent == 'positive want to go place question':
-            locations = get_ner_tag(sentence, ['LOCATION'])
+            locations = get_ner_tag(sentence, ['LOCATION']) + get_pos_tag(sentence, ['NN', 'NNS', 'NNP', 'NNPS'])
             if len(locations) > 0:
                 output_message = output_message.replace("<noun>", format_list(tags))
             else:
