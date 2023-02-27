@@ -62,11 +62,16 @@ def get_response(intents_list, intents_json):
     tag = intents_list[0]['intent']
     list_of_intents = intents_json['intents']
     result = ""
+    error_result = ""
     for i in list_of_intents:
         if i['label'] == tag:                
             result = random.choice(i['outputs'])
+
+            if "error_outputs" in i:
+                error_result = random.choice(i['error_outputs'])
             break
-    return result
+
+    return result, error_result
 
 # Helper Functions
 def get_ner_tag(sentence, tags):
@@ -93,23 +98,30 @@ def handle_input(actor: Actor, input_message: str) -> str:
 
     for sentence in sentences:
         ints = predict_class(sentence)
-        output_message = get_response(ints, intents)
+        output_message, error_message = get_response(ints, intents)
         intent = ints[0]['intent']
 
         if intent == 'introduction response':
             name = get_ner_tag(sentence, ['PERSON'])
             if len(name) > 0:
                 output_message = output_message.replace("<name>", name[0])
+            else:
+                output_message = error_message
         elif intent == 'favorite':
             subject = get_pos_tag(input_message, ['NN', 'NNS', 'NNP'])
             if len(subject) > 0:
                 output_message = output_message.replace("<noun>", subject[0])
+            else:
+                output_message = error_message
         elif intent == 'positive like noun question':
             tags = get_pos_tag(sentence, ['NN', 'NNS', 'NNP', 'NNPS', 'VBG'])
             output_message = output_message.replace("<noun>", format_list(tags))
         elif intent == 'positive want to go place question':
-            tags = get_pos_tag(sentence, ['NN', 'NNS', 'NNP', 'NNPS'])
-            output_message = output_message.replace("<noun>", format_list(tags))
+            locations = get_ner_tag(sentence, ['LOCATION'])
+            if len(locations) > 0:
+                output_message = output_message.replace("<noun>", format_list(tags))
+            else:
+                output_message = error_message
         elif intent == 'weather question':
             pass
 

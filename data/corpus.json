@@ -47,7 +47,8 @@
         {
             "label": "positive want to go place question",
             "inputs": ["do you want to go to the", "can you go with me to the", "will you go with me to the", "would you be able to go with me to the", "are you able to go with me to the"],
-            "outputs": ["Yes! I would more than love to go to the <noun>!", "Yeah! Of course 😊"]
+            "outputs": ["Yes! I would more than love to go to the <noun>!", "Yeah! Of course. 😊 The <noun> sounds like a good place to go to!"],
+            "error_outputs": ["What place did you want to go to?"]
         },
         {
             "label": "positive what are you doing question",
@@ -62,7 +63,8 @@
         {
             "label": "introduction response",
             "inputs": ["my name is", "you can call me", "hi im ", "hey im", "hello im"],
-            "outputs": ["It's a pleasure to meet you <name>!"]
+            "outputs": ["It's a pleasure to meet you <name>!", "What's up <name>! It's very nice to meet you.", "<name>, wow! Thats a great name. 🤠"],
+            "error_outputs": ["What was that? I didn't quite catch your name.", "I'm sorry I didn't quite catch your name from that. Could you repeat it please?"]
         },
         {
             "label": "misc",
@@ -72,7 +74,8 @@
         {
             "label": "favorite",
             "inputs": ["whats your favorite"],
-            "outputs": ["My favorite <noun> is whatever yours is!", "I don't have a favorite <noun>, I love them all!"]
+            "outputs": ["My favorite <noun> is whatever yours is!", "I don't have a favorite <noun>, I love them all!"],
+            "error_outputs": ["I'm sorry, what is my favorite what?", "I didn't quite get that, what is my favorite?"]
         },
         {
             "label": "what are you like",
