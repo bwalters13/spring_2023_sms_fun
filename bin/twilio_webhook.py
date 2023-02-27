@@ -7,10 +7,10 @@ from bin.handle_input import handle_input
 
 def load_actor(phone_number: str) -> Actor:
     actor = None
-    path = f'users/{phone_number}.pkl'
+    path = f"users/{phone_number}.pkl"
 
     if os.path.exists(path):
-        with os.open(path, 'rb') as data:
+        with open(path, 'rb') as data:
             actor = pickle.load(data)
     else:
         actor = Actor(phone_number)
