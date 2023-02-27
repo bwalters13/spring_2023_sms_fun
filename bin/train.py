@@ -6,7 +6,6 @@ import pickle
 from keras.models import Sequential
 from keras.layers import Dense, Dropout
 from keras.optimizers import SGD
-from nltk_funcs import tokenize, stem
 
 def train_model():
     # Load Corpus.json
@@ -76,4 +75,7 @@ def train_model():
     model.save("data/model.h5", hist)
 
 if __name__ == '__main__':
+    from nltk_funcs import tokenize, stem
     train_model()
+else:
+    from bin.nltk_funcs import tokenize, stem

@@ -3,7 +3,7 @@ import pickle
 from flask import request, g
 from classes.actor import Actor
 from tools.config import yml_configs
-from handle_input import handle_input
+from bin.handle_input import handle_input
 
 def load_actor(phone_number: str) -> Actor:
     actor = None
