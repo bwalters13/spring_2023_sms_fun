@@ -6,7 +6,7 @@ import pickle
 from keras.models import Sequential
 from keras.layers import Dense, Dropout
 from keras.optimizers import SGD
-from bin.nltk_funcs import tokenize, stem
+from nltk_funcs import tokenize, stem
 
 def train_model():
     # Load Corpus.json
