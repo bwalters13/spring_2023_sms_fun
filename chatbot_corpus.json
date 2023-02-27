@@ -85,9 +85,62 @@
             "What do you mean?"
         ]
         ,
-        "what is your favorite movie": [
-            "Nacho Libre",
-            "Shrek"
+        "what is your favorite sport": [
+            "Football",
+            "Soccer",
+            "basketabll"
         ]
+        ,
+        "what is your favorite football team": [
+            "chargers",
+            "49ers",
+            "Rams"
+        ]
+        ,
+        "what is the name of one player on the chargers": [
+            "Joey Bosa",
+            "Josh Palmer"
+        ]
+        ,
+        "who": [
+            "sorry are we talking about ?",
+            "sorry i don't remember"
+        ]        ,
+        "what do you get at the store": [
+            "Food and candy",
+            "Fruits",
+            "snacks"
+        ]
+        ,
+        "what kind of snacks": [
+            "cookies",
+            "Hot cheetos",
+            "popcorn"
+        ]
+        ,
+        "what kind of cookies": [
+            "Chocolate chip",
+            "oatmeal",
+            "sugar"
+        ]
+        ,
+        "what store do you shop at": [
+            "Walmart",
+            "target",
+            "home depot"
+        ]
+        ,
+        "what is your favorite animal": [
+            "a dog",
+            "a horse",
+            "a donkey"
+        ]
+        ,
+        "what is your favorite type of candy?": [
+            "kit kat",
+            "M&M's",
+            "Now and Later"
+        ]
+        
     }
 }
