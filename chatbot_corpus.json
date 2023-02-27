@@ -103,7 +103,7 @@
         ]
         ,
         "who": [
-            "sorry are we talking about ?",
+            "sorry who are we talking about ?",
             "sorry i don't remember"
         ]        ,
         "what do you get at the store": [
@@ -194,6 +194,21 @@
             "Costco has a food court that is really cheap",
             "I wish I could help"
         ]
-        
+        ,
+        "what show are you watching ": [
+            "The last of Us",
+            "SpongeBob",
+            "Pokerface"
+        ]
+        ,
+        "how is it ": [
+            "it is good",
+            "Its amazing"
+        ]
+        ,
+        "who is your favorite character ": [
+            "Sorry I do not really have one",
+            "I do not like to pick favorites"
+        ]
     }
 }
