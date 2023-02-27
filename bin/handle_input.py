@@ -70,6 +70,15 @@ def get_pos_tag(sentence, tags):
     tokenized = tokenize(sentence)
     return [word for (word, pos) in nltk.pos_tag(tokenized) if pos in tags]
 
+def format_list(list):
+    length = len(list)
+    if length == 0:
+        return ""
+    elif length == 1:
+        return list[0]
+    else:
+        return "{}, and {}".format(", ".join(list[:-1]), list[-1])
+
 # Main Function
 def handle_input(actor: Actor, input_message: str) -> str:
     ints = predict_class(input_message)
@@ -86,12 +95,10 @@ def handle_input(actor: Actor, input_message: str) -> str:
         pass
     elif intent == 'positive like noun question':
         tags = get_pos_tag(input_message, ['NN', 'NNS', 'NNP', 'NNPS', 'VBG'])
-        if len(tags) > 0:
-            output_message = output_message.replace("<noun>", "{}, and {}".format(", ".join(tags[:-1]), tags[-1]))
+        output_message = output_message.replace("<noun>", format_list(tags))
     elif intent == 'positive want to go place question':
         tags = get_pos_tag(input_message, ['NN', 'NNS', 'NNP', 'NNPS'])
-        if len(tags) > 0:
-            output_message = output_message.replace("<noun>", "{}, and {}".format(", ".join(tags[:-1]), tags[-1]))
+        output_message = output_message.replace("<noun>", format_list(tags))
     elif intent == 'weather question':
         pass
 
