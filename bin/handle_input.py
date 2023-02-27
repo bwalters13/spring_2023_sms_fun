@@ -69,8 +69,8 @@ def get_response(intents_list, intents_json):
     return result
 
 # Helper Functions
-def get_name(sentence):
-    return [word for (word, pos) in nertTagger.tag(tokenize(sentence)) if pos == "PERSON"]
+def get_ner_tag(sentence, tags):
+    return [word for (word, pos) in nertTagger.tag(tokenize(sentence)) if pos in tags]
 
 def get_pos_tag(sentence, tags):
     tokenized = tokenize(sentence)
@@ -97,7 +97,7 @@ def handle_input(actor: Actor, input_message: str) -> str:
         intent = ints[0]['intent']
 
         if intent == 'introduction response':
-            name = get_name(sentence)
+            name = get_ner_tag(sentence, ['PERSON'])
             if len(name) > 0:
                 output_message = output_message.replace("<name>", name[0])
         elif intent == 'favorite':
