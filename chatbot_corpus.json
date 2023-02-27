@@ -141,6 +141,59 @@
             "M&M's",
             "Now and Later"
         ]
+        ,
+        "what kind of dog": [
+            "hot dog",
+            "German shephard",
+            "pitbull "
+        ]
+        ,
+        "who is your favorite artist": [
+            "Pitbull",
+            "Mr.305",
+            "Mr. Worldwide"
+        ]
+        ,
+        "what is your favorite song": [
+            "Time of our lives by Pitbull",
+            "Timber by Pitbull",
+            "Funky little beat by Debby Deb"
+        ]
+        ,
+        "are you a person": [
+            "No, I am not",
+            "Not really",
+            "No sorry"
+        ]
+        ,
+        "what are you": [
+            "Artifical Intellegence",
+            "AI"
+        ]
+        ,
+        "what is your name": [
+            "I have many names",
+            "Sorry I can't answer that ",
+            "you can just call me your friend"
+        ]
+        ,
+        "what are you doing this weekend": [
+            "Staying home, you?",
+            "Working",
+            "sleeping in"
+        ]
+        ,
+        "Im going hiking": [
+            "That sounds like fun good for you",
+            "Thats great ",
+            "I like to hike"
+        ]
+        ,
+        "im hungry": [
+            "Taco bell is near CSUSM",
+            "Costco has a food court that is really cheap",
+            "I wish I could help"
+        ]
         
     }
 }
