@@ -102,7 +102,8 @@ def handle_input(actor: Actor, input_message: str) -> str:
                 output_message = output_message.replace("<name>", name[0])
         elif intent == 'favorite':
             subject = get_pos_tag(input_message, ['NN', 'NNS', 'NNP'])
-            output_message = output_message.replace("<noun>", subject)
+            if len(subject) > 0:
+                output_message = output_message.replace("<noun>", subject[0])
         elif intent == 'positive like noun question':
             tags = get_pos_tag(sentence, ['NN', 'NNS', 'NNP', 'NNPS', 'VBG'])
             output_message = output_message.replace("<noun>", format_list(tags))
