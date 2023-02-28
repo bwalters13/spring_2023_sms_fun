@@ -91,7 +91,7 @@
         {
             "label": "weather question",
             "inputs": [ "how's the weather", "hows the weather", "whats it like outside", "what's it like outside", "what's the temperature outside", "what is the weather in", "what's the weather in", "is it hot outside", "is it cold outside" ],
-            "outputs": [ "Well in <location>, it is <temperature>." ]
+            "outputs": [ "Well in <location>, it is <temperature>.", "It is currently <temperature> in <location>." ]
         },
         {
             "label": "what to do questions",
@@ -121,7 +121,7 @@
         },
         {
             "label": "negative comment",
-            "inputs": [ "Your dumb", "You're dumb", "Go away", "go away", "Stupid", "stupid!", "you're stupid", "youre stupid", "youre dumb" ],
+            "inputs": [ "Your dumb", "You're dumb", "Go away", "go away", "Stupid", "stupid!", "you're stupid", "youre stupid", "youre dumb", "i dont like you", "i hate you"],
             "outputs": [ "I'm sorry you feel that way. If you feel more positive, feel free to stop by again!", "Sometimes people have bad days. If you want a friend to talk to, come back!" ]
         },
         {
@@ -144,6 +144,16 @@
             "inputs": [ "how old are you", "what is your age","can you tell me your birthday", "can you give you your date of birth? ", "what year were you born"],
             "outputs": [ "That's sweet of you to ask my age, but I never reveal my secrets", "Your funny. I can't reveal my age here", " I can't rememeber sorry" ]
             
+        },
+        {
+            "label": "location",
+            "inputs": [ "where do you live", "where are you located", "where are you" ],
+            "outputs": [ "Sorry, but I do not give out that kind of information.", "I would prefer to not reveal that, sorry!." ]
+        },
+        {
+            "label": "goodbye",
+            "inputs": [ "bye", "goodbye", "farewell", "see you later", "adios", "until next time", "take care", "cya" ],
+            "outputs": [ "It was a pleasure chatting with you!😊", "Talk to you later, have a good one!😊", "Have an amazing day!😊", "Don't be a stranger!", "Take it easy!", "See you around!", "Until next time!", "Catch you later!", "Have a good one!😊", "Peace!"]
         }
     ]
 }
