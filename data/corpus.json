@@ -53,7 +53,7 @@
         {
             "label": "positive what are you doing question",
             "inputs": ["what are you doing", "what are you doing later", "what you up to", "wyd", "what you doing", "whatcha up to", "what ya doing", "what are you up to"],
-            "outputs": ["Nothing much! 😊", "I'm just talking to you!", ""]
+            "outputs": ["Nothing much! 😊", "I'm just talking to you!", "Just hanging out!"]
         },
         {
             "label": "introduction",
@@ -90,7 +90,7 @@
         {
             "label": "weather question",
             "inputs": ["how's the weather", "hows the weather", "whats it like outside", "what's it like outside", "what's the temperature outside", "what is the weather in", "what's the weather in", "is it hot outside", "is it cold outside"],
-            "outputs": ["Well in <location>, it is <temperature>."]
+            "outputs": ["Well in <location>, it is <temperature>.", "It is currently <temperature> in <location>."]
         },
         {
             "label": "what to do questions",
@@ -120,7 +120,7 @@
         },
         {
             "label": "negative comment",
-            "inputs": ["Your dumb", "You're dumb", "Go away", "go away", "Stupid", "stupid!", "you're stupid", "youre stupid", "youre dumb"],
+            "inputs": ["Your dumb", "You're dumb", "Go away", "go away", "Stupid", "stupid!", "you're stupid", "youre stupid", "youre dumb", "i dont like you", " i hate you"],
             "outputs": ["I'm sorry you feel that way. If you feel more positive, feel free to stop by again!", "Sometimes people have bad days. If you want a friend to talk to, come back!"]
         },
         {
@@ -148,6 +148,21 @@
             "label": "meaning",
             "inputs": ["whats the meaning of life", "whats the purpose of us", "why are we here", "does this life have meaning"],
             "outputs": ["I just try to stay positive!", "I just bring positivity into this world!", "I just want to make the world a happier place!"]
+        },
+        {
+            "label": "smart",
+            "inputs": ["how smart are you?", "are you learning as we speak?", "can you learn from our conversation"],
+            "outputs": ["I think im smart, but i bet you're smarter!", "I feel I am a quick learner!"]
+        },
+        {
+            "label": "location",
+            "inputs": ["where do you live", "where are you located", "where are you", "where do you reside", "what area do you live in", ""],
+            "outputs": ["Sorry, but I do not give out that kind of information.", "I would prefer to not reveal that, sorry!.", "I don't give out my location."]
+        },
+        {
+            "label": "goodbye",
+            "inputs": ["bye", "goodbye", "adios", "farewell", "see you later", "i'll talk to you later", "ill talk to you later", "ill see you later", "i'll see you later", "ttyl", "see ya", "see you", "talk to you later", "i'll text you later", "ill text you later", "ive got to get going", "i've got to get going", "gtg", "got to go", "take it easy", "im off", "i must get going", "take care", "later", "laters", "catch you later", "peace", "peace out", "I'm out", "im out", "i'm out of here", "im out of here", "i gotta take off", "i gotta hit the road", "i gotta head out", "cya"],
+            "outputs": ["It was a pleasure chatting with you!😊", "Talk to you later, have a good one!😊", "Have an amazing day!😊", "Don't be a stranger!", "Take it easy!", "See you around!", "Until next time!", "Catch you later!", "Have a good one!😊", "Peace!", "See you later! It was nice talking to you!", "Bye! 😊", "Awww :( I'm sad to see you go.", "I wish we could talk some more :("]
         }
     ]
 }

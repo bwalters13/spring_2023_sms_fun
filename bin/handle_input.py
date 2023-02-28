@@ -13,7 +13,7 @@ from bin.train import train_model
 from nltk.tag.stanford import StanfordNERTagger
 
 # NLTK
-nertTagger = StanfordNERTagger('data/stanford-ner/classifiers/english.all.3class.distsim.crf.ser.gz', 'data/stanford-ner/stanford-ner.jar')
+nertTagger = StanfordNERTagger('data/stanford-ner/classifiers/english.all.3class.caseless.distsim.crf.ser.gz', 'data/stanford-ner/stanford-ner.jar')
 
 # Load Modules
 # nlp = spacy.load("en_core_web_lg")
@@ -131,7 +131,7 @@ def handle_input(actor: Actor, input_message: str) -> str:
             tags = get_pos_tag(sentence, ['NN', 'NNS', 'NNP', 'NNPS', 'VBG'])
             output_message = output_message.replace("<noun>", format_list(tags))
         elif intent == 'positive want to go place question':
-            locations = get_ner_tag(sentence, ['LOCATION']) + get_pos_tag(sentence, ['NN', 'NNS', 'NNP', 'NNPS'])
+            locations = list(set(get_ner_tag(sentence, ['LOCATION']) + get_pos_tag(sentence, ['NN', 'NNS', 'NNP', 'NNPS'])))
             if len(locations) > 0:
                 output_message = output_message.replace("<noun>", format_list(tags))
             else:
