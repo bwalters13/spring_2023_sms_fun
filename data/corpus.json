@@ -157,7 +157,7 @@
         },
         {
             "label": "location",
-            "inputs": ["where do you live", "where are you located", "where are you"],
+            "inputs": [ "where do you live", "where are you located", "where are you", "where do you reside", "what area do you live in", "" ],
             "outputs": ["Sorry, but I do not give out that kind of information.", "I would prefer to not reveal that, sorry!.", "I don't give out my location."]
         },
         {
