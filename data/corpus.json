@@ -95,12 +95,12 @@
         },
         {
             "label": "what to do questions",
-            "inputs": [ "what should I do?", "What should I do", "Im bored", "I'm bored", "Is there something to do?", "Is there something I can be doing?", "I want to do something fun" ],
-            "outputs": [ "You should get some fresh air!", "The climate is nice, you should take a walk!", "I hear there are nice hikes in your area!", "There are some good movies out right now!" ]
+            "inputs": [ "what should I do?", "What should I do", "Im bored", "I'm bored", "Is there something to do?", "Is there something I can be doing?", "I want to do something fun", "Where should i go eat"," what should i listen to", "where did i park my car" ],
+            "outputs": [ "You should get some fresh air!", "The climate is nice, you should take a walk!", "I hear there are nice hikes in your area!", "There are some good movies out right now!", "At a tacobell near you", "Listen to music that makes you happy"," I don't know the answer to that" ]
         },
         {
             "label": "health advice",
-            "inputs": [ "I feel sick today", "I feeling sick today", "feeling sick", "can you help with my health?", "Can you help with my health?", "am i healthy?", "Am I healthy? " ],
+            "inputs": [ "I feel sick today", "I feeling sick today", "feeling sick", "can you help with my health?", "Can you help with my health?", "am i healthy?", "Am I healthy? ", "I have a cut "],
             "outputs": [ "I am sorry to hear that :(. I bet your doctor will help you get you out of that right away!", "I hope you feel better soon! I would recommend reaching out to your doctor" ]
         },
         {
@@ -141,8 +141,9 @@
         },
         {
             "label": "age",
-            "inputs": [ "how old are you", "what is your age","can you tell me your birthday", "can you give you your date of birth? " ],
-            "outputs": [ "That's sweet of you to ask my age, but I never reveal my secrets", "Your funny. I can't reveal my age here" ]
+            "inputs": [ "how old are you", "what is your age","can you tell me your birthday", "can you give you your date of birth? ", "what year were you born"],
+            "outputs": [ "That's sweet of you to ask my age, but I never reveal my secrets", "Your funny. I can't reveal my age here", " I can't rememeber sorry" ]
+            
         }
     ]
 }
