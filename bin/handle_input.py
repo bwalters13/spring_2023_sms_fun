@@ -6,7 +6,7 @@ import numpy as np
 import nltk
 import requests
 import re
-from datetime import date
+from datetime import date, datetime
 from classes.actor import Actor
 from keras.models import load_model
 from bin.nltk_funcs import tokenize, stem, split_sentences
@@ -159,8 +159,8 @@ def handle_input(actor: Actor, input_message: str) -> str:
             today = date.today()
             output_message = output_message.replace("<date>", today.strftime('%A, %B %d, %Y'))
         elif intent == 'time':
-            today = date.now()
-            output_message = output_message.replace("<time>", today.strftime('%I:%M %p'))
+            now = datetime.now()
+            output_message = output_message.replace("<time>", now.strftime('%I:%M %p'))
 
         output_messages.append(output_message)
 
