@@ -6,6 +6,7 @@ class Actor:
         self.phone = phone_number
         self.path = f'users/{phone_number}.pkl'
         self.prev_msgs = []
+        self.name = ""
 
     def save_msg(self, msg):
         self.prev_msgs.append(msg)

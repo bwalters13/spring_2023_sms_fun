@@ -107,8 +107,14 @@ def handle_input(actor: Actor, input_message: str) -> str:
             name = get_ner_tag(sentence, ['PERSON'])
             if len(name) > 0:
                 output_message = output_message.replace("<name>", name[0])
+                actor.name = name[0]
             else:
                 output_message = error_message
+        elif intent == "simple greeting":
+            if actor.name:
+                output_message = output_message.replace("<name>", " " + actor.name)
+            else:
+                output_message = output_message.replace("<name>", "")
         elif intent == 'favorite':
             subject = get_pos_tag(input_message, ['NN', 'NNS', 'NNP'])
             if len(subject) > 0:
