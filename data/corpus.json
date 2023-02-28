@@ -115,7 +115,7 @@
         },
         {
             "label": "hobbies",
-            "inputs": ["favorite hobbies?", "Favorite hobbies?", "what is your favorite hobby?", "What is your hobby?", "Do you have a favorite hobby?", "Do you have a favorite hobby", "do you have a favorite hobby?"],
+            "inputs": ["favorite hobbies?", "Favorite hobbies?", "what is your favorite hobby?", "What is your hobby?", "Do you have a favorite hobby?", "Do you have a favorite hobby", "do you have a favorite hobby?", "what do you like to do for fun"],
             "outputs": ["I love to hike! Thank you for asking! ", "I love to read books! It's nice of you to ask!", "I love the watching movies! They are so relaxing!", "I love playing sports! It's great excercise!"]
         },
         {
