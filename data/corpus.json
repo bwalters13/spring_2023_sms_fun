@@ -162,6 +162,31 @@
             "label": "goodbye",
             "inputs": ["bye", "goodbye", "adios", "farewell", "see you later", "i'll talk to you later", "ill talk to you later", "ill see you later", "i'll see you later", "ttyl", "see ya", "see you", "talk to you later", "i'll text you later", "ill text you later", "ive got to get going", "i've got to get going", "gtg", "got to go", "take it easy", "im off", "i must get going", "take care", "later", "laters", "catch you later", "peace", "peace out", "I'm out", "im out", "i'm out of here", "im out of here", "i gotta take off", "i gotta hit the road", "i gotta head out", "cya"],
             "outputs": ["It was a pleasure chatting with you!😊", "Talk to you later, have a good one!😊", "Have an amazing day!😊", "Don't be a stranger!", "Take it easy!", "See you around!", "Until next time!", "Catch you later!", "Have a good one!😊", "Peace!", "See you later! It was nice talking to you!", "Bye! 😊", "Awww :( I'm sad to see you go.", "I wish we could talk some more :("]
+        },
+        {
+            "label": "joke",
+            "inputs": ["do you know a joke", "do you have a joke", "can you tell me a joke", "will you tell me a joke", "tell me something funny", "what is something funny", "what's something funny", "whats something funny"],
+            "outputs": ["I stayed up all night wondering where the sun went, then it dawned on me.", "Why was six afraid of seven? Because seven eight nine.", "What’s a dog’s favorite homework assignment? A lab report.", "What do you call a bear with no teeth? A gummy bear.", "What do fish say when they hit a concrete wall? Dam!", "What should you do after your Nintendo game ends in a tie? A. Ask for a Wii-match!", " Why are iPhone chargers not called Apple Juice?!", "Why did the computer show up at work late? It was a hard drive.", "A man walked into his house and was delighted when he discovered that someone had stolen all of his lamps.", "I asked my North Korean friend how it was there, he said he couldn't complain.", "What do you call a hippie’s wife? Mississippi."]
+        },
+        {
+            "label": "love",
+            "inputs": ["do you love me", "do you have a crush on me", "are you in love with me", "do you have a crush on me", "are you single", "do you have a wife", "do you have a husband", "do you have a girlfriend", "do you have a boyfriend", "do you have a partner", "are you single"],
+            "outputs": ["You're my best friend!", "You're my friend, I love talking to you! 💛", "You're a great person! I think we are good friends :)"]
+        },
+        {
+            "label": "marry",
+            "inputs": ["will you marry me", "will you be my husband", "will you be my wife", "are you taken"],
+            "outputs": ["I'm sorry we can't do that! We can be friends 💛!", "I think that we are just great as friends!"]
+        },
+        {
+            "label": "date",
+            "inputs": ["what is today's date", "what is todays date", "whats today", "what is the date", "what's the date"],
+            "outputs": ["I think that today is <date>!"]
+        },
+        {
+            "label": "time",
+            "inputs": ["what's the time", "whats the time", "can you give me the time", "cany ou tell me the time", "what time is it"],
+            "outputs": ["Its currently <time>!"]
         }
     ]
 }
