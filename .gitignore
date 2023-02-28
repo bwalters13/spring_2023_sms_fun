@@ -127,6 +127,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-data/directory.pkl
+data/dictionary.pkl
 data/labels.pkl
 data/model.h5
